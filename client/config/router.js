@@ -10,11 +10,26 @@ FlowRouter.route('/ccdhhLogin', {
         BlazeLayout.render("blankLayout", {content: "ccdhhLogin"});
     }
 });
-FlowRouter.route('/ccdhhDashboard1', {
+
+FlowRouter.route('/ccdhhDashboard', {
     action: function() {
-        BlazeLayout.render("blankLayout", {content: "ccdhhDashboard1"});
+        BlazeLayout.render("mainLayout", {content: "ccdhhDashboard"});
     }
 });
+
+FlowRouter.route('/ccdhhTrainings', {
+    action: function() {
+        BlazeLayout.render("mainLayout", {content: "ccdhhTrainings"});
+    }
+});
+FlowRouter.route('/ccdhhConsults', {
+    action: function() {
+        BlazeLayout.render("mainLayout", {content: "ccdhhConsults"});
+    }
+});
+
+
+
 
 
 

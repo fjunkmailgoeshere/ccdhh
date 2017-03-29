@@ -1,4 +1,4 @@
-Template.ccdhhDashboard1.helpers({
+Template.ccdhhDashboard.helpers({
 
     // For demo purpose
     // Example of notification list
@@ -12,7 +12,27 @@ Template.ccdhhDashboard1.helpers({
 
 });
 
-Template.ccdhhDashboard1.rendered = function(){
+/*Template.ccdhhDashboard.events({
+	'click button': function(event) {
+		var destination = ""
+		var id = event.currentTarget.attributes.name.value;
+		if (id == "goConsults") {
+			destination = "/ccdhhConsults";
+		}
+		if (id == "goTrainings") {
+			destination = "/ccdhhTrainings";
+		}
+
+		router.go(destination);
+	}
+
+});*/
+
+
+
+
+
+Template.ccdhhDashboard.rendered = function(){
 
     var doughnutData = {
         labels: ["App","Software","Laptop" ],
