@@ -5,6 +5,19 @@ FlowRouter.route('/', {
     }
 });
 
+FlowRouter.route('/ccdhhLogin', {
+    action: function() {
+        BlazeLayout.render("blankLayout", {content: "ccdhhLogin"});
+    }
+});
+FlowRouter.route('/ccdhhDashboard1', {
+    action: function() {
+        BlazeLayout.render("blankLayout", {content: "ccdhhDashboard1"});
+    }
+});
+
+
+
 FlowRouter.route('/dashboard1', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "dashboard1"});
