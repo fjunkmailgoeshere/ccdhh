@@ -1,11 +1,95 @@
-<template name="ccdhhConsults">
+<template name= "ccdhhConsults">
+	<!-- Page heading -->
+	{{> pageHeading title='Consults' category='Other pages' }}
+	
+	<form>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Log consults here</h5>
+                </div>
+				
+				<!-- Date -->
+	            <div class="hr-line-dashed"></div>
+				<div class="col-md-12">
+	                <div class="ibox float-e-margins">
+	                    <div class="ibox-title">
+	                        <h5>Date of Contact</h5>
+	                        
+	                    </div>
+	                    <div class="ibox-content">
+	                   
+	                      
+	                        <div class="form-group" id="data_1">
+	                            <label class="font-normal">Click to select</label>
+	                            <div class="input-group date">
+	                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/28/2017">
+	                            </div>
+	                        </div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Name-->
+                <div class="hr-line-dashed"></div>
+				<div class="form-group"><label class="col-sm-2 control-label">Name</label>
 
-    <!-- Page heading -->
-    {{> pageHeading title='Consults' category='Other pages' }}
+                    <div class="col-sm-10"><input type="text" placeholder="enter name" class="form-control"></div>
+					
+				<!-- Gender -->	
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group"><label class="col-sm-2 control-label">Gender</label>
 
-    <div class="wrapper wrapper-content">
-        <div class="middle-box text-center animated fadeInRightBig">
-            <h3 class="font-bold">This is page content -- stuff here that links to other three consult pages, and then make those pages</h3>
-        </div>
-    </div>
-</template>
+                        <div class="col-sm-10"><select class="form-control m-b" name="account">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Transgender</option>
+                            <option>Non-binary</option>
+							<option>Other</option>
+                        </select>
+	
+				<!-- Age Range -->	
+				
+               <div class="hr-line-dashed"></div>
+               <div class="form-group"><label class="col-sm-2 control-label">Age Range <br/>
+                   <small class="text-navy">Select One</small></label>
+
+                   <div class="col-sm-10">
+                       <div><label> <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios"> Under 12 years old </label></div>
+                       <div><label> <input type="radio" value="option2" id="optionsRadio2" name="optionsRadios"> 12-17 years old </label></div>
+					   <div><label> <input type="radio" value="option3" id="optionsRadio3" name="optionsRadios"> 18-24 years old </label></div>
+					   <div><label> <input type="radio" value="option4" id="optionsRadio4" name="optionsRadios"> 25-34 years old </label></div>
+					   <div><label> <input type="radio" value="option5" id="optionsRadio5" name="optionsRadios"> 35-44 years old </label></div>
+					   <div><label> <input type="radio" value="option6" id="optionsRadio6" name="optionsRadios"> 45-54 years old </label></div>
+					   <div><label> <input type="radio" value="option7" id="optionsRadio7" name="optionsRadios"> 55-64 years old </label></div>
+					   <div><label> <input type="radio" value="option8" id="optionsRadio8" name="optionsRadios"> 65-74 years old </label></div>
+					   <div><label> <input type="radio" value="option9" id="optionsRadio9" name="optionsRadios"> 75 years or older </label></div>
+                   </div>
+               </div>
+				
+				<!-- Hearing Status -->	
+				<!-- Ethnicity -->
+				<!-- County -->	
+				<!-- City/Town -->
+				<!-- Entity -->
+				<!-- Method of Contact -->
+				<!-- Reason for Contact -->
+				<!-- Person taking call -->	
+				<!-- Result of Call (Inquiry) -->
+				<!-- Notes (Technical Assistance Provided) -->	
+				
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-2">
+                      <br><br>  <button class="btn btn-white" type="submit">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Save changes</button>
+                    </div>
+                </div>
+			
+	</div></div></div></div></div></div>
+			</form>		
+</template>				
+	
+	
+	

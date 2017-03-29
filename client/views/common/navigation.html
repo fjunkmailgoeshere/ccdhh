@@ -28,23 +28,42 @@
                     </div>
                 </li>
 				
-				<li class="{{isActivePath regex='admin'}}">
-					<a href="admin"><i class="fa fa-gear"></i><span class="nav-label" data-i18n="nav.dashboard">Admin</span></a>
-				</li>
-				
                 <li class="{{isActivePath regex='dashboard1'}}">
-                    <a href="dashboard1"><i class="fa fa-th-large"></i><span class="nav-label" data-i18n="nav.dashboard">Dashboard</span></a>
+                    <a href="dashboard1"><i class="fa fa-th-large"></i><span class="nav-label" data-i18n="nav.dashboard">Dashboard/Home</span></a>
                 </li>
 				
-      
-				<li class="{{isActivePath regex='consults'}}">
-					<a href="consults"><i class="fa fa-pencil-square-o"></i><span class="nav-label" data-i18n="nav.dashboard">Consults</span></a>
+				<li class="{{isActivePath regex='ccdhhAdmin'}}">
+					<a href="ccdhhadmin"><i class="fa fa-gear"></i><span class="nav-label" data-i18n="nav.dashboard">Admin</span></a>
 				</li>
 				
-				<li class="{{isActivePath regex='trainings'}}">
-					<a href="trainings"><i class="fa fa-group"></i><span class="nav-label" data-i18n="nav.dashboard"> Trainings </span></a>
+				<li class="{{isActivePath regex='ccdhhconsults'}}">
+					<a href="ccdhhconsults"><i class="fa fa-pencil-square-o"></i><span class="nav-label" data-i18n="nav.dashboard">Consults</span></a>
 				</li>
-           
+				
+				<li class="{{isActivePath regex='ccdhhtrainings'}}">
+					<a href="ccdhhtrainings"><i class="fa fa-group"></i><span class="nav-label" data-i18n="nav.dashboard"> Trainings </span></a>
+				</li>
+				
+				<li class="{{isActivePath regex='ccdhhreportsquery'}}">
+					<a href="ccdhhreportsquery"><i class="fa fa-table"></i><span class="nav-label" data-i18n="nav.dashboard">Reports Query</span></a>
+				</li>
+			
+			
+			<!-- Begin Sample Code for Dashboard -->
+				
+           <li class="{{isActivePath regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5'}}">
+               <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboard Samples</span> <span class="fa arrow"></span></a>
+               <ul class="nav nav-second-level collapse {{isActivePath regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5' className='in'}}">
+                   <li class="{{isActivePath regex='/dashboard1'}}"><a href="dashboard1">Dashboard v.1</a></li>
+                   <li class="{{isActivePath regex='/dashboard2'}}"><a href="dashboard2">Dashboard v.2</a></li>
+                   <li class="{{isActivePath regex='/dashboard3'}}"><a href="dashboard3">Dashboard v.3</a></li>
+                   <li class="{{isActivePath regex='/dashboard4l'}}"><a href="dashboard4l">Dashboard v.4</a></li>
+                   <li class="{{isActivePath regex='/dashboard5'}}"><a href="dashboard5">Dashboard v.5 </a></li>
+               </ul>
+           </li>
+           <li class="{{isActivePath regex='/layouts'}}">
+               <a href="layouts"><i class="fa fa-diamond"></i> <span class="nav-label" data-i18n="nav.layouts">Layouts</span> </a>
+           </li>
                
                 <li class="{{isActivePath regex='c3charts|graphFlot|graphMorris|graphRickshaw|graphChartJs|graphPeity|graphSparkline|graphChartist'}}">
                     <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label" data-i18n="nav.graphs">Graphs</span><span class="fa arrow"></span></a>
