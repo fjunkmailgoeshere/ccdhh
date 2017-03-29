@@ -36,23 +36,27 @@
 				<div class="form-group"><label class="col-sm-2 control-label">Name</label>
 
                     <div class="col-sm-10"><input type="text" placeholder="enter name" class="form-control"></div>
-					
+				</div>
 				<!-- Gender -->	
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group"><label class="col-sm-2 control-label">Gender</label>
+                 <div class="hr-line-dashed"></div>
+                <div class="form-group"><label class="col-sm-2 control-label">Gender 
+                     <small class="text-navy">Select One</small></label>
 
-                        <div class="col-sm-10"><select class="form-control m-b" name="account">
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Transgender</option>
-                            <option>Non-binary</option>
-							<option>Other</option>
-                        </select>
-	
+                    <div class="col-sm-10">
+                        <div><label> <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios"> Male </label></div>
+                        <div><label> <input type="radio" value="option2" id="optionsRadio2" name="optionsRadios"> Female </label></div>
+ 					   <div><label> <input type="radio" value="option3" id="optionsRadio3" name="optionsRadios"> DeafBlind </label></div>
+ 					   <div><label> <input type="radio" value="option4" id="optionsRadio4" name="optionsRadios"> Transgender </label></div>
+ 					   <div><label> <input type="radio" value="option5" id="optionsRadio5" name="optionsRadios"> Non-Binary </label></div>
+					   <div><label> <input type="radio" value="option5" id="optionsRadio6" name="optionsRadios"> Other </label></div>
+                    </div>
+                </div>
+                    
+
 				<!-- Age Range -->	
 				
                <div class="hr-line-dashed"></div>
-               <div class="form-group"><label class="col-sm-2 control-label">Age Range <br/>
+              <div class="form-group"><label class="col-sm-2 control-label">Age Range 
                    <small class="text-navy">Select One</small></label>
 
                    <div class="col-sm-10">
@@ -69,17 +73,218 @@
                </div>
 				
 				<!-- Hearing Status -->	
+				
+                <div class="hr-line-dashed"></div>
+                <div class="form-group"><label class="col-sm-2 control-label">Hearing Status 
+                    <small class="text-navy">Select One</small></label>
+
+                    <div class="col-sm-10">
+                        <div><label> <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios"> Deaf </label></div>
+                        <div><label> <input type="radio" value="option2" id="optionsRadio2" name="optionsRadios"> Hard of Hearing </label></div>
+ 					   <div><label> <input type="radio" value="option3" id="optionsRadio3" name="optionsRadios"> DeafBlind </label></div>
+ 					   <div><label> <input type="radio" value="option4" id="optionsRadio4" name="optionsRadios"> Late Deafened </label></div>
+ 					   <div><label> <input type="radio" value="option5" id="optionsRadio5" name="optionsRadios"> Hearing </label></div>
+                    </div>
+                </div>
+				
 				<!-- Ethnicity -->
+				
+                <div class="hr-line-dashed"></div>
+                <div class="form-group"><label class="col-sm-2 control-label">Ethnicity
+                    <small class="text-navy">Select One</small></label>
+
+                    <div class="col-sm-10">
+                        <div><label> <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios"> Spanish, Hispanic, or Latino </label></div>
+                        <div><label> <input type="radio" value="option2" id="optionsRadio2" name="optionsRadios"> White </label></div>
+ 					   <div><label> <input type="radio" value="option3" id="optionsRadio3" name="optionsRadios"> Black or African-American </label></div>
+ 					   <div><label> <input type="radio" value="option4" id="optionsRadio4" name="optionsRadios"> American Indian or Alaskan Native </label></div>
+ 					   <div><label> <input type="radio" value="option5" id="optionsRadio5" name="optionsRadios"> Asian </label></div>
+					   <div><label> <input type="radio" value="option6" id="optionsRadio5" name="optionsRadios"> Native Hawaiian or other Pacific Islander </label></div>
+					   <div><label> <input type="radio" value="option7" id="optionsRadio5" name="optionsRadios"> From multiple races </label></div>
+					   <div><label> <input type="radio" value="option8" id="optionsRadio5" name="optionsRadios"> Unnown or prefer not to answer </label></div>
+                    </div>
+                </div>
+				
 				<!-- County -->	
-				<!-- City/Town -->
+                <div class="ibox float-e-margins">
+                  
+                    <div class="ibox-content">
+                      
+                <div class="form-group"><label class="col-sm-2 control-label">County 
+					<small class="text-navy">Select One</small></label>
+                   
+                    <div>
+                        <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+                            <option value="">Select</option>
+                            <option value="Adams">Adams</option>
+                            <option value="Alamosa">Alamosa</option>
+                            <option value="Arapahoe">Arapahoe</option>
+                            <option value="Archuleta">Archuleta</option>
+                            <option value="Baca">Baca</option>
+                            <option value="Bent">Bent</option>
+                            <option value="Boulder">Boulder</option>
+                            <option value="Broomfield">Broomfield (City and County of)</option>
+                            <option value="Chaffee">Chaffee</option>
+                            <option value="Cheyenne">Cheyenne</option>
+                            <option value="Clear Creek">Clear Creek</option>
+                            <option value="Conejos">Conejos</option>
+                            <option value="Costilla">Costilla</option>
+                            <option value="Crowley">Crowley</option>
+                            <option value="Custer">Custer</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Denver">Denver (City and County of)</option>
+                            <option value="Douglas">Douglas</option>
+                            <option value="Eagle">Eagle</option>
+                            <option value="El Paso">El Paso</option>
+                            <option value="Elbert">Elbert</option>
+                            <option value="Fremont">Fremont</option>
+                            <option value="Garfield">Garfield</option>
+                            <option value="Gilpin">Gilpin</option>
+                            <option value="Grand">Grand</option>
+                            <option value="Gunnison">Gunnison</option>
+                            <option value="Hinsdale">Hinsdale</option>
+                            <option value="Huerfano">Huerfano</option>
+                            <option value="Jackson">Jackson</option>
+                            <option value="Jefferson">Jefferson</option>
+                            <option value="Kiowa">Kiowa</option>
+                            <option value="Kit Carson">Kit Carson</option>
+                            <option value="La Plata">La Plata</option>
+                            <option value="Lake">Lake</option>
+                            <option value="Larimer">Larimer</option>
+                            <option value="Las Animas">Las Animas</option>
+                            <option value="Lincoln">Lincoln</option>
+                            <option value="Logan">Logan</option>
+                            <option value="Mesa">Mesa</option>
+                            <option value="Mineral">Mineral</option>
+                            <option value="Moffat">Moffat</option>
+                            <option value="Montezuma">Montezuma</option>
+                            <option value="Montrose">Montrose</option>
+                            <option value="Morgan">Morgan</option>
+                            <option value="Otero">Otero</option>
+                            <option value="Ouray">Ouray</option>
+                            <option value="Park">Park</option>
+                            <option value="Phillips">Phillips</option>
+                            <option value="Pitkin">Pitkin</option>
+                            <option value="Prowers">Prowers</option>
+                            <option value="Rio Blanco">Rio Blanco</option>
+                            <option value="Rio Grande">Rio Grande</option>
+                            <option value="Routt">Routt</option>
+                            <option value="Saguache">Saguache</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Miguel">San Miguel</option>
+                            <option value="Sedgwick">Sedgwick</option>
+                            <option value="Summit">Summit</option>
+                            <option value="Teller">Teller</option>
+                            <option value="Washington">Washington</option>
+                            <option value="Weld">Weld</option>
+                            <option value="Yuma">Yuma</option>
+                        </select>
+                    </div>
+                </div></div></div>
+				
 				<!-- Entity -->
+				
+                <div class="hr-line-dashed"></div>
+                <div class="form-group"><label class="col-sm-2 control-label">Entity
+                    <small class="text-navy">Select One</small></label>
+
+                    <div class="col-sm-10">
+                        <div><label> <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios"> I - Individual </label></div>
+                        <div><label> <input type="radio" value="option2" id="optionsRadio2" name="optionsRadios"> GE - Government </label></div>
+ 					   <div><label> <input type="radio" value="option3" id="optionsRadio3" name="optionsRadios"> PE - Public </label></div>
+ 					   <div><label> <input type="radio" value="option4" id="optionsRadio4" name="optionsRadios"> CO - Community </label></div>
+ 					   <div><label> <input type="radio" value="option5" id="optionsRadio5" name="optionsRadios"> PRE - Private </label></div>
+                    </div>
+                </div>
+				
 				<!-- Method of Contact -->
-				<!-- Reason for Contact -->
-				<!-- Person taking call -->	
-				<!-- Result of Call (Inquiry) -->
+				
+                <div class="hr-line-dashed"></div>
+                <div class="form-group"><label class="col-sm-2 control-label">Method of Contact
+                    <small class="text-navy">Select One</small></label>
+
+                    <div class="col-sm-10">
+                        <div><label> <input type="radio" value="option1" id="optionsRadio2" name="optionsRadios"> Email </label></div>
+ 					   <div><label> <input type="radio" value="option2" id="optionsRadio3" name="optionsRadios"> VP/Phone </label></div>
+ 					   <div><label> <input type="radio" value="option3" id="optionsRadio4" name="optionsRadios"> In-Person </label></div>
+ 					   <div><label> <input type="radio" value="option4" id="optionsRadio5" name="optionsRadios"> Other </label></div>
+                    </div>
+                </div>
+				
+				<!-- Reason for Contact (waiting for more from Timothy)-->
+				
+                <div class="hr-line-dashed"></div>
+                <div class="form-group"><label class="col-sm-2 control-label">Reason for Contact 
+                    <small class="text-navy">Select One</small></label>
+
+                    <div class="col-sm-10">
+                        <div><label> <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios"> Communication Access </label></div>
+                        <div><label> <input type="radio" value="option2" id="optionsRadio2" name="optionsRadios"> Hearing Assistive Technology </label></div>
+ 					   <div><label> <input type="radio" value="option3" id="optionsRadio3" name="optionsRadios"> CART </label></div>
+ 					   <div><label> <input type="radio" value="option4" id="optionsRadio4" name="optionsRadios"> Technology Assistance </label></div>
+ 					   <div><label> <input type="radio" value="option5" id="optionsRadio5" name="optionsRadios"> Referral </label></div>
+					   <div><label> <input type="radio" value="option6" id="optionsRadio5" name="optionsRadios"> Other </label></div>
+                    </div>
+                </div>
+				
+				<!-- Person taking call (add user logged in autofill)-->	
+				
+               <div class="ibox float-e-margins">
+                 
+                   <div class="ibox-content">
+                     
+               <div class="form-group"><label class="col-sm-2 control-label">Person taking call 
+				<small class="text-navy">Select One</small></label>
+                  
+                   <div>
+                       <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+                           <option value="">Select</option>
+                           <option value="Timothy">Timothy</option>
+                           <option value="Cliff">Cliff</option>
+                           <option value="Cheri">Cheri</option>
+                           <option value="JoAnne">JoAnne</option>
+                           <option value="Mandy">Mandy</option>
+                           <option value="Ryan">Ryan</option>
+                           <option value="Jason">Jason</option>
+                           <option value="newOutreach1">New Outreach 1</option>
+                           <option value="newOutreach2">New Outreach2</option>
+                       </select>
+                   </div>
+               </div></div></div>
+				
+				<!-- Result of Call (Inquiry) Waiting for info from Timothy -->
+                <div class="form-group"><label class="col-sm-2 control-label">Result of Inquiry <br/>
+                    <small class="text-navy">Select one or more</small></label>
+
+                    <div class="col-sm-10">
+                        <div><label> <input type="checkbox" value=""> Referred to TEDP </label></div>
+						<div><label> <input type="checkbox" value=""> Referred to LAS </label></div>
+						<div><label> <input type="checkbox" value=""> Referred to Grant Program </label></div>
+						<div><label> <input type="checkbox" value=""> Referred to System Advocacy </label></div>
+						<div><label> <input type="checkbox" value=""> Referred to DeafBlind Services </label></div>
+						<div><label> <input type="checkbox" value=""> Referred to Colorado Daylight </label></div>
+						<div><label> <input type="checkbox" value=""> Referred to Early Intervention </label></div>
+						<div><label> <input type="checkbox" value=""> Referred to Attorney General </label></div>
+						<div><label> <input type="checkbox" value=""> Other </label></div>
+                        
+                    </div>
+                </div>
 				<!-- Notes (Technical Assistance Provided) -->
+                <div class="hr-line-dashed"></div>
+				<div class="form-group"><label class="col-sm-2 control-label">Technical Assistance Provided</label>
+
+                    <div class="col-sm-10"><input type="text" placeholder="type notes here" class="form-control"></div>
+				</div>
 				<!--Policies & Procedures Advisement Checkbox (see map)-->	
 				
+                <div class="hr-line-dashed"></div>
+                <div class="form-group"><label class="col-sm-2 control-label">Policies and Procedures Advisement Provided? </label>
+
+                    <div class="col-sm-10"><label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">  </label> 
+                </div>
+			</div>	
+			
+				<!-- Submit and Cancel button -->
                 <div class="hr-line-dashed"></div>
                 <div class="form-group">
                     <div class="col-sm-4 col-sm-offset-2">
@@ -88,8 +293,11 @@
                     </div>
                 </div>
 			
-	</div></div></div></div></div></div>
-			</form>		
+			</div>
+		</div>
+	</div>
+
+	</form>		
 </template>				
 	
 	
