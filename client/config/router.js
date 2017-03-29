@@ -133,7 +133,15 @@ FlowRouter.route('/graphSparkline', {
 });
 
 
+//
+//Consults
+//
 
+FlowRouter.route('/consults',{
+	action: function() {
+		BlazeLayout.render("mainLayout", {content: "consults"});
+	}
+});
 
 
 //
