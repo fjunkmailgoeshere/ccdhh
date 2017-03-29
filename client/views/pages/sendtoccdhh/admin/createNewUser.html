@@ -1,0 +1,21 @@
+<template name= "ccdhhCreateNewUser">
+	<!-- Page heading -->
+	{{> pageHeading title='Create New User'}}
+
+	<form>
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+                Username: <input type="text" name="username"><br>
+                Password: <input type="password" name="password"><br>
+		Repeat Password: <input type="password" name="passwordrepeat"><br>
+		Privileges: <select name="privileges">
+			<OPTION SELECTED value="standard">Standard User</option>
+			<OPTION value="administrator">Administrator</option>
+			</SELECT><BR>
+<button type = "submit">Add new user</button>
+	</form>
+	
+</template>				
+	
+	
+	
