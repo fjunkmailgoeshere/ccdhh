@@ -28,12 +28,22 @@
                     </div>
                 </li>
 				
+				<li class="{{isActivePath regex='admin'}}">
+					<a href="admin"><i class="fa fa-gear"></i><span class="nav-label" data-i18n="nav.dashboard">Admin</span></a>
+				</li>
+				
                 <li class="{{isActivePath regex='dashboard1'}}">
-                    <a href="dashboard1"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboard</span></a>
+                    <a href="dashboard1"><i class="fa fa-th-large"></i><span class="nav-label" data-i18n="nav.dashboard">Dashboard</span></a>
                 </li>
 				
       
+				<li class="{{isActivePath regex='consults'}}">
+					<a href="consults"><i class="fa fa-pencil-square-o"></i><span class="nav-label" data-i18n="nav.dashboard">Consults</span></a>
+				</li>
 				
+				<li class="{{isActivePath regex='trainings'}}">
+					<a href="trainings"><i class="fa fa-group"></i><span class="nav-label" data-i18n="nav.dashboard"> Trainings </span></a>
+				</li>
            
                
                 <li class="{{isActivePath regex='c3charts|graphFlot|graphMorris|graphRickshaw|graphChartJs|graphPeity|graphSparkline|graphChartist'}}">
