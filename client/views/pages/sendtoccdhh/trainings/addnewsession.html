@@ -5,7 +5,7 @@
 
     <div class="wrapper wrapper-content animated fadeInRight">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-8">
 				<div class="ibox-title">
 					<h5>Add New Session</h5>
 					
@@ -20,88 +20,58 @@
 							</tr>
 							<tr>
 								<td>Training Modules</td>
-								<td><button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Select One<span class="caret"></span></button>
-			                        <ul class="dropdown-menu">
-			                        	<li><a href="#">Module 1</a></li>
-			                            <li><a href="#">Module 2</a></li>
-			                            <li><a href="#">Module 3</a></li>
-			                            <li><a href="#">Module 4</a></li>
-									</ul>
-								</td>
+								<td><select data-placeholder="Select a Module" class="chosen-select" tabindex="2">
+                            <option value="">Select</option>
+                            <option value="Module 1">Module 1</option>
+							<option value="Module 2">Module 2</option>
+							<option value="Module 3">Module 3</option>
+							<option value="Module 4">Module 4</option>
+							<option value="Module 5">Module 5</option>
+								</select></td>
 							</tr>
 							<tr>
 								<td>Date of Training</td>
-								<td><input type="text" data-mask="99/99/9999" placeholder=""><span class="help-block">dd/mm/yyyy</span>
+								<td><input type="text" data-mask="99/99/9999" placeholder=""><span class="help-block">mm/dd/yyyy</span>
 								</td>
 							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-							
-							
-							
-							
-							
-						
-     
-          
-		 
-		  <!--  Date of Training (use date picker or input mask for date)   -->
-					<div class="form-group">
-                                <label class="col-sm-2 control-label">Date</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" data-mask="99/99/9999" placeholder="">
-                                    <span class="help-block">dd/mm/yyyy</span>
-                                </div>
-                            </div>
-		  <!--  Title of Training   -->
-		  
-		  <h3>Training</h3>
-		  <!--  # of Attendees (could play with knob-dial? Prob want maximum of 300)   -->
-		  
-		                              <div class="form-group"><label class="col-sm-2 control-label">How Many Attended?</label>
-
-                                <div class="col-sm-10"><input type="text" class="form-control"></div>
-                            </div>
-
-		  <!--  Activity Type (drop down)   -->
-		  
-		  <h3>Activity Types</h3>
-		  
-		   <div class="form-group"><label class="col-sm-2 control-label">Dropdown</label>
-
-        <div class="col-sm-10">
-            <div class="input-group m-b">
-                <div class="input-group-btn">
-                    <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Activity <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                        	<li><a href="#">Activity 1</a></li>
-                            <li><a href="#">Activity 2</a></li>
-                            <li><a href="#">Activity 3</a></li>
-                            <li><a href="#">Activity 4</a></li>
-                            <!-- <li class="divider"></li> -->
-                            <!-- <li><a href="#">Separated link</a></li> -->
-                        </ul>
-                </div>
-			</div>
-		</div>
-	</div>
-		  
-		  <!--  Location of Training  (input mask for address? can use county autocomplete list from consults) -->
-		  
-		  <div class="ibox float-e-margins">
-                  
-                    <div class="ibox-content">
-                      
-                <div class="form-group"><label class="col-sm-2 control-label">Which County?
-					<small class="text-navy">Select One</small></label>
-                   
-                    <div>
-                        <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+							<tr>
+								<td> Title of Training </td>
+								<td><input type="text" placeholder="enter text here"></td>
+							</tr>
+							<tr>
+								<td> Number of people attended </td>
+								<td><input type="text" placeholder="enter ### here"> </td>
+							</tr>
+							<tr>
+								<td> Activity Type(s)</td>
+								<td><div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label for="inlineCheckbox1"> Activity 1 </label>
+                                    </div>
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option1">
+                                        <label for="inlineCheckbox2"> Activity 2  </label>
+                                    </div>
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                        <label for="inlineCheckbox3"> Activity 3  </label>
+                                    </div>
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox4" value="option1">
+                                        <label for="inlineCheckbox4"> Activity 4  </label>
+                                    </div>
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox5" value="option1">
+                                        <label for="inlineCheckbox5"> Activity 5 </label>
+                                    </div> </td>	
+							</tr>
+							<tr>
+								<td>Location of Training</td>
+								<td><textarea name="location"></textarea></td>
+							</tr>
+							<tr>
+								<td>County</td>
+								<td>                     <select data-placeholder="Choose a Country" class="chosen-select" tabindex="2">
                             <option value="">Select</option>
                             <option value="Adams">Adams</option>
                             <option value="Alamosa">Alamosa</option>
@@ -165,53 +135,34 @@
                             <option value="Washington">Washington</option>
                             <option value="Weld">Weld</option>
                             <option value="Yuma">Yuma</option>
-                        </select>
-                    </div>
-                </div></div></div>
-				
-		  <!--  Length of Training (clock picker?)  -->
-		  
-		                              <div class="form-group"><label class="col-sm-2 control-label">How long was Training? (In Minutes)</label>
-
-                                <div class="col-sm-10"><input type="text" class="form-control"></div>
-                            </div>
-		  <!--  Trainer  (drop down list) -->
-		  
-		  <h3>Trainers</h3>
-		  
-		   <div class="form-group"><label class="col-sm-2 control-label">Dropdown</label>
-
-        <div class="col-sm-10">
-            <div class="input-group m-b">
-                <div class="input-group-btn">
-                    <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Trainer <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                        	<li><a href="#">Trainer 1</a></li>
-                            <li><a href="#">Trainer 2</a></li>
-                            <li><a href="#">Trainer 3</a></li>
-                            <li><a href="#">Trainer 4</a></li>
-                            <li><a href="#">Trainer 5</a></li>
-                            <li><a href="#">Trainer 6</a></li>
-                            <li><a href="#">Trainer 7</a></li>
-                            <li><a href="#">Trainer 8</a></li>
-                            <li><a href="#">Trainer 9</a></li>
-                            <li><a href="#">Trainer 10</a></li>
-                            <!-- <li class="divider"></li> -->
-                            <!-- <li><a href="#">Separated link</a></li> -->
-                        </ul>
-                </div>
-			</div>
-		</div>
-	</div>
-		  <!--  Materials Used  (checkboxes?) -->
-		  
-		  <p>Materials Used</p>
-                                    <div class="checkbox checkbox-inline">
+                        </select></td>
+							</tr>
+							<tr>
+								<td>Length of Training</td>
+								<td><input type="text" placeholder="# of minutes"></td>
+							</tr>
+							<tr>
+								<td>Trainer</td>
+								<td><button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Select One<span class="caret"></span></button>
+			                        <ul class="dropdown-menu">
+			                        	<li><a href="#">Trainer 1</a></li>
+			                            <li><a href="#">Trainer 2</a></li>
+			                            <li><a href="#">Trainer 3</a></li>
+			                            <li><a href="#">Trainer 4</a></li>
+										<li><a href="#">Trainer 5</a></li>
+										<li><a href="#">Trainer 6</a></li>
+										<li><a href="#">Trainer 7</a></li>
+										<li><a href="#">Trainer 8</a></li>
+									</ul></td>
+							</tr>
+							<tr>
+								<td>Training Materials Used</td>
+								<td><div class="checkbox checkbox-inline">
                                         <input type="checkbox" id="inlineCheckbox1" value="option1">
                                         <label for="inlineCheckbox1"> PowerPoint </label>
                                     </div>
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                                    <div class="checkbox checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option1">
                                         <label for="inlineCheckbox2"> Pre/Post Surveys </label>
                                     </div>
                                     <div class="checkbox checkbox-inline">
@@ -219,24 +170,37 @@
                                         <label for="inlineCheckbox3"> Movie/Video </label>
                                     </div>
                                     <div class="checkbox checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                        <input type="checkbox" id="inlineCheckbox4" value="option1">
                                         <label for="inlineCheckbox4"> Scenario/Activities </label>
                                     </div>
                                     <div class="checkbox checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                        <input type="checkbox" id="inlineCheckbox5" value="option1">
                                         <label for="inlineCheckbox5"> Role Play Activities</label>
-                                    </div>
-		  <!--  Notes  (text box) -->
-		  
-		  <div class="form-group"><label class="col-sm-2 control-label">Notes</label>
-
-                                <div class="col-sm-10"><input type="text" class="form-control"></div>
-                            </div>
-		  
-		  
-		  
+                                    </div> </td>
+							</tr>	
+							<tr>
+								<td> Notes </td>
+								<td><textarea name="notes"></textarea></td>
+							</tr>		
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
 	
-        
-   
+							
+							
+				<!-- Submit and Cancel button -->
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-2">
+                      <br><br>  <button class="btn btn-white" type="submit">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Save changes</button>
+                    </div>
+                </div>			
+
+	
+		 
 	
 </template>
