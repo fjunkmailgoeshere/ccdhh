@@ -2,65 +2,41 @@
 	<!-- Page heading -->
 	{{> pageHeading title='Consults' category='Other pages' }}
 	
-	<form>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="ibox float-e-margins">
-                <div class="ibox-title">
-                    <h5>Log consults here</h5>
-                </div>
-				
-				<!-- Date -->
-	            <div class="hr-line-dashed"></div>
-				<div class="col-md-12">
-	                <div class="ibox float-e-margins">
-	                    <div class="ibox-title">
-	                        <h5>Date of Contact</h5>
-	                        
-	                    </div>
-	                    <div class="ibox-content">
-	                   
-	                      
-	                        <div class="form-group" id="data_1">
+	
+    <div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="ibox-title">
+					<h5>Log Consults Here</h5>
+					
+				</div>
+				<div class="ibox-content">
+					
+					<table class="table table-hover">
+						<tbody>
+							<tr>
+								<td> Date of Contact </td>
+								<td> <div class="form-group" id="data_1">
 	                            <label class="font-normal">Click to select</label>
 	                            <div class="input-group date">
 	                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/28/2017" name="thedate">
-	                            </div>
-	                        </div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Name-->
-                <div class="hr-line-dashed"></div>
-				<div class="form-group"><label class="col-sm-2 control-label">Name</label>
-
-                    <div class="col-sm-10"><input type="text" placeholder="enter name" class="form-control"></div>
-				</div>
-				<!-- Gender -->	
-                 <div class="hr-line-dashed"></div>
-                <div class="form-group"><label class="col-sm-2 control-label">Gender 
-                     <small class="text-navy">Select One</small></label>
-
-                    <div class="col-sm-10">
-                        <div><label> <input type="radio" value="male" id="gender_id" name="gender"> Male </label></div>
+								</div></div></td>
+							</tr>
+							<tr>
+								<td> Name </td>
+								<td><input type="text" placeholder="enter name" class="form-control"> </td>
+							</tr>
+							<tr>
+								<td>Gender  </td>
+								<td><div><label> <input type="radio" value="male" id="gender_id" name="gender"> Male </label></div>
                         <div><label> <input type="radio" value="female" id="gender_id" name="gender"> Female </label></div>
  					   <div><label> <input type="radio" value="transgender" id="gender_id" name="gender"> Transgender </label></div>
  					   <div><label> <input type="radio" value="non-binary" id="gender_id" name="gender"> Non-Binary</label></div>
- 					   <div><label> <input type="radio" value="other" id="gender_id" name="gender"> Other </label></div>
-					
-                    </div>
-                </div>
-                    
-
-				<!-- Age Range -->	
-				
-               <div class="hr-line-dashed"></div>
-              <div class="form-group"><label class="col-sm-2 control-label">Age Range 
-                   <small class="text-navy">Select One</small></label>
-
-                   <div class="col-sm-10">
-                       <div><label> <input type="radio" value="Under 12 years old" id="age_id" name="age"> Under 12 years old </label></div>
+ 					   <div><label> <input type="radio" value="other" id="gender_id" name="gender"> Other </label></div> </td>
+							</tr>
+							<tr>
+								<td> Age Range </td>
+								<td><div><label> <input type="radio" value="Under 12 years old" id="age_id" name="age"> Under 12 years old </label></div>
                        <div><label> <input type="radio" value="12-17 years old" id="age_id" name="age"> 12-17 years old </label></div>
 					   <div><label> <input type="radio" value="18-24 years old" id="age_id" name="age"> 18-24 years old </label></div>
 					   <div><label> <input type="radio" value="25-34 years old" id="age_id" name="age"> 25-34 years old </label></div>
@@ -68,53 +44,30 @@
 					   <div><label> <input type="radio" value="45-54 years old" id="age_id" name="age"> 45-54 years old </label></div>
 					   <div><label> <input type="radio" value="55-64 years old" id="age_id" name="age"> 55-64 years old </label></div>
 					   <div><label> <input type="radio" value="65-74 years old" id="age_id" name="age"> 65-74 years old </label></div>
-					   <div><label> <input type="radio" value="75 years or older" id="age_id" name="age"> 75 years or older </label></div>
-                   </div>
-               </div>
-				
-				<!-- Hearing Status -->	
-				
-                <div class="hr-line-dashed"></div>
-                <div class="form-group"><label class="col-sm-2 control-label">Hearing Status 
-                    <small class="text-navy">Select One</small></label>
-
-                    <div class="col-sm-10">
-                        <div><label> <input type="radio" value="deaf" id="hearing_id" name="hearing"> Deaf </label></div>
+					   <div><label> <input type="radio" value="75 years or older" id="age_id" name="age"> 75 years or older </label></div> </td>
+							</tr>
+							<tr>
+								<td> Hearing Status </td>
+								<td> <div><label> <input type="radio" value="deaf" id="hearing_id" name="hearing"> Deaf </label></div>
                         <div><label> <input type="radio" value="hard of hearing" id="hearing_id" name="hearing"> Hard of Hearing </label></div>
  					   <div><label> <input type="radio" value="deafblind" id="hearing_id" name="hearing"> DeafBlind </label></div>
  					   <div><label> <input type="radio" value="late deafened" id="hearing_id" name="hearing"> Late Deafened </label></div>
- 					   <div><label> <input type="radio" value="hearing" id="hearing_id" name="hearing"> Hearing </label></div>
-                    </div>
-                </div>
-				
-				<!-- Ethnicity -->
-				
-                <div class="hr-line-dashed"></div>
-                <div class="form-group"><label class="col-sm-2 control-label">Ethnicity
-                    <small class="text-navy">Select One</small></label>
-
-                    <div class="col-sm-10">
-                        <div><label> <input type="radio" value="spanish hispanic or latino" id="ethnicity_id" name="ethnicity"> Spanish, Hispanic, or Latino </label></div>
+ 					   <div><label> <input type="radio" value="hearing" id="hearing_id" name="hearing"> Hearing </label></div></td>
+							</tr>
+							<tr>
+								<td> Ethnicity </td>
+								<td><div><label> <input type="radio" value="spanish hispanic or latino" id="ethnicity_id" name="ethnicity"> Spanish, Hispanic, or Latino </label></div>
                         <div><label> <input type="radio" value="white" id="ethnicity_id" name="ethnicity"> White </label></div>
  					   <div><label> <input type="radio" value="black or african american" id="ethnicity_id" name="ethnicity"> Black or African-American </label></div>
  					   <div><label> <input type="radio" value="american indian or alaskan native" id="ethnicity_id" name="ethnicity"> American Indian or Alaskan Native </label></div>
  					   <div><label> <input type="radio" value="asian" id="ethnicity_id" name="ethnicity"> Asian </label></div>
 					   <div><label> <input type="radio" value="native hawaiian or other pacific islander" id="ethnicity_id" name="ethnicity"> Native Hawaiian or other Pacific Islander </label></div>
 					   <div><label> <input type="radio" value="from multiple races" id="ethnicity_id" name="ethnicity"> From multiple races </label></div>
-					   <div><label> <input type="radio" value="unknown or prefer not to answer" id="ethnicity_id" name="ethnicity"> Unnown or prefer not to answer </label></div>
-                    </div>
-                </div>
-				
-				<!-- County -->	
-                <div class="ibox float-e-margins">
-                  
-                    <div class="ibox-content">
-                      
-                <div class="form-group"><label class="col-sm-2 control-label">County 
-					<small class="text-navy">Select One</small></label>
-                   
-                    <div>
-                        <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+					   <div><label> <input type="radio" value="unknown or prefer not to answer" id="ethnicity_id" name="ethnicity"> Unnown or prefer not to answer </label></div> </td>
+							</tr>
+							<tr>
+								<td> County </td>
+								<td><select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
                             <option value="">Select</option>
                             <option value="Adams">Adams</option>
                             <option value="Alamosa">Alamosa</option>
@@ -179,65 +132,37 @@
                             <option value="Weld">Weld</option>
                             <option value="Yuma">Yuma</option>
                         </select>
-                    </div>
-                </div></div></div>
-				
-				<!-- Entity -->
-				
-                <div class="hr-line-dashed"></div>
-                <div class="form-group"><label class="col-sm-2 control-label">Entity
-                    <small class="text-navy">Select One</small></label>
-
-                    <div class="col-sm-10">
-                        <div><label> <input type="radio" value="I Individual" id="entity_id" name="entity"> I - Individual </label></div>
+							 	</td>
+							</tr>
+							<tr>
+								<td> Entity </td>
+								<td> <div><label> <input type="radio" value="I Individual" id="entity_id" name="entity"> I - Individual </label></div>
                         <div><label> <input type="radio" value="GE Government" id="entity_id" name="entity"> GE - Government </label></div>
  					   <div><label> <input type="radio" value="PE Public" id="entity_id" name="entity"> PE - Public </label></div>
  					   <div><label> <input type="radio" value="CO Community" id="entity_id" name="entity"> CO - Community </label></div>
- 					   <div><label> <input type="radio" value="PRE Private" id="entity_id" name="entity"> PRE - Private </label></div>
-                    </div>
-                </div>
-				
-				<!-- Method of Contact -->
-				
-                <div class="hr-line-dashed"></div>
-                <div class="form-group"><label class="col-sm-2 control-label">Method of Contact
-                    <small class="text-navy">Select One</small></label>
-
-                    <div class="col-sm-10">
-                        <div><label> <input type="radio" value="email" id="method_id" name="method"> Email </label></div>
+ 					   <div><label> <input type="radio" value="PRE Private" id="entity_id" name="entity"> PRE - Private </label></div></td>
+							</tr>
+							<tr>
+								<td> Method of Contact </td>
+								<td>  <div><label> <input type="radio" value="email" id="method_id" name="method"> Email </label></div>
  					   <div><label> <input type="radio" value="VP phone" id="method_id" name="method"> VP/Phone </label></div>
  					   <div><label> <input type="radio" value="in person" id="method id" name="method"> In-Person </label></div>
- 					   <div><label> <input type="radio" value="other" id="method_id" name="method"> Other </label></div>
-                    </div>
-                </div>
-				
-				<!-- Reason for Contact (waiting for more from Timothy)-->
-				
-                <div class="hr-line-dashed"></div>
-                <div class="form-group"><label class="col-sm-2 control-label">Reason for Contact 
-                    <small class="text-navy">Select One</small></label>
-
-                    <div class="col-sm-10">
-                        <div><label> <input type="radio" value="communication access" id="reason_id" name="method"> Communication Access </label></div>
+ 					   <div><label> <input type="radio" value="other" id="method_id" name="method"> Other </label></div></td>
+							</tr>
+							<tr>
+								<td> Reason for Contact </td> 
+								<!-- Reason for Contact (waiting for more from Timothy)-->
+								<td> <div><label> <input type="radio" value="communication access" id="reason_id" name="method"> Communication Access </label></div>
                         <div><label> <input type="radio" value="hearing assistive technology" id="reason_id" name="method"> Hearing Assistive Technology </label></div>
  					   <div><label> <input type="radio" value="cart" id="reason_id" name="method"> CART </label></div>
  					   <div><label> <input type="radio" value="technology assistance" id="reason_id" name="method"> Technology Assistance </label></div>
  					   <div><label> <input type="radio" value="referral" id="reason_id" name="method"> Referral </label></div>
-					   <div><label> <input type="radio" value="other" id="reason_id" name="method"> Other </label></div>
-                    </div>
-                </div>
-				
-				<!-- Person taking call (add user logged in autofill)-->	
-				
-               <div class="ibox float-e-margins">
-                 
-                   <div class="ibox-content">
-                     
-               <div class="form-group"><label class="col-sm-2 control-label">Person taking call 
-				<small class="text-navy">Select One</small></label>
-                  
-                   <div>
-                       <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+					   <div><label> <input type="radio" value="other" id="reason_id" name="method"> Other </label></div></td>
+							</tr>
+							<tr>
+								<td> Person Taking Call </td> 
+								<!-- Person taking call (add user logged in autofill)-->
+								<td> <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
                            <option value="">Select</option>
                            <option value="Timothy">Timothy</option>
                            <option value="Cliff">Cliff</option>
@@ -248,16 +173,12 @@
                            <option value="Jason">Jason</option>
                            <option value="newOutreach1">New Outreach 1</option>
                            <option value="newOutreach2">New Outreach2</option>
-                       </select>
-                   </div>
-               </div></div></div>
-				
-				<!-- Result of Call (Inquiry) Waiting for info from Timothy -->
-                <div class="form-group"><label class="col-sm-2 control-label">Result of Inquiry <br/>
-                    <small class="text-navy">Select one or more</small></label>
-
-                    <div class="col-sm-10">
-                        <div><label> <input type="checkbox" value=""> Referred to TEDP </label></div>
+                       </select></td>
+							</tr>
+							<tr>
+								<td> Result of Inquiry </td>
+								<!-- Result of Call (Inquiry) Waiting for info from Timothy -->
+								<td><div><label> <input type="checkbox" value=""> Referred to TEDP </label></div>
 						<div><label> <input type="checkbox" value=""> Referred to LAS </label></div>
 						<div><label> <input type="checkbox" value=""> Referred to Grant Program </label></div>
 						<div><label> <input type="checkbox" value=""> Referred to System Advocacy </label></div>
@@ -265,39 +186,42 @@
 						<div><label> <input type="checkbox" value=""> Referred to Colorado Daylight </label></div>
 						<div><label> <input type="checkbox" value=""> Referred to Early Intervention </label></div>
 						<div><label> <input type="checkbox" value=""> Referred to Attorney General </label></div>
-						<div><label> <input type="checkbox" value=""> Other </label></div>
-                        
-                    </div>
-                </div>
-				<!-- Notes (Technical Assistance Provided) -->
-                <div class="hr-line-dashed"></div>
-				<div class="form-group"><label class="col-sm-2 control-label">Technical Assistance Provided</label>
+						<div><label> <input type="checkbox" value=""> Other </label></div> </td>
+							</tr>
+							<tr>
+								<td> Technical Assistance Provided (Notes) </td>
+								<td><textarea name="technicalassistance"></textarea> </td>
+							</tr>
+							<tr>
+								<td> Policies and Procedures Advisement Provided? </td>
+								<td><label class="checkbox-inline"> <input type="checkbox" value="policiesandprocedures" id="inlineCheckbox1"> (check if yes) </label>  </td>
+							</tr>
+							<tr>
+							</tr>
+							<tr>
+		  			      <div class="hr-line-dashed"></div>
+		  			      <div class="form-group">
+			          
+		  			            <br><br>  <button class="btn btn-white" type="submit">Cancel</button>
+		  			              <button class="btn btn-primary" type="submit">Save changes</button>
+		  			          </div>	
+							</tr>	
+						
+							
+						
+						</tbody>
+			      
+				  
+					</table>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+	
 
-                    <div class="col-sm-10"><input type="text" placeholder="type notes here" class="form-control"></div>
-				</div>
-				<!--Policies & Procedures Advisement Checkbox (see map)-->	
-				
-                <div class="hr-line-dashed"></div>
-                <div class="form-group"><label class="col-sm-2 control-label">Policies and Procedures Advisement Provided? </label>
 
-                    <div class="col-sm-10"><label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">  </label> 
-                </div>
-			</div>	
-			
-				<!-- Submit and Cancel button -->
-                <div class="hr-line-dashed"></div>
-                <div class="form-group">
-                    <div class="col-sm-4 col-sm-offset-2">
-                      <br><br>  <button class="btn btn-white" type="submit">Cancel</button>
-                        <button class="btn btn-primary" type="submit">Save changes</button>
-                    </div>
-                </div>
-			
-			</div>
-		</div>
-	</div>
-
-	</form>		
+	
 </template>				
 	
 	
