@@ -1,7 +1,7 @@
 /* code here */
-Template.ccdhhConsults.rendered=function() {
+/*Template.ccdhhConsults.rendered=function() {
 	$('#my-datepicker').datepicker();
-}
+}*/
 
 
 //Consults = new Mongo.Collection('consults');
@@ -12,7 +12,8 @@ Template.ccdhhConsults.events({
 
 		//Check the checkboxes for reasonforcontact
 		var reason = [];
-		
+		alert(event);
+		/*		
 		if (event.target.communicationaccess.checked == true) { 
 			reason.push(event.target.communicationaccess.value);
 		}
@@ -48,5 +49,7 @@ Template.ccdhhConsults.events({
 
 		console.log(data);
 		Consults.insert(data);
+		*/
 	}
+	
 });
