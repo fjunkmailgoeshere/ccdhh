@@ -41,15 +41,11 @@
 							</tr>
 							<tr>
 								<td> Age Range </td>
-								<td><div><label> <input type="radio" value="Under 12 years old" id="age_id" name="age"> Under 12 years old </label></div>
-                       <div><label> <input type="radio" value="12-17 years old" id="age_id" name="age"> 12-17 years old </label></div>
-					   <div><label> <input type="radio" value="18-24 years old" id="age_id" name="age"> 18-24 years old </label></div>
-					   <div><label> <input type="radio" value="25-34 years old" id="age_id" name="age"> 25-34 years old </label></div>
-					   <div><label> <input type="radio" value="35-44 years old" id="age_id" name="age"> 35-44 years old </label></div>
-					   <div><label> <input type="radio" value="45-54 years old" id="age_id" name="age"> 45-54 years old </label></div>
-					   <div><label> <input type="radio" value="55-64 years old" id="age_id" name="age"> 55-64 years old </label></div>
-					   <div><label> <input type="radio" value="65-74 years old" id="age_id" name="age"> 65-74 years old </label></div>
-					   <div><label> <input type="radio" value="75 years or older" id="age_id" name="age"> 75 years or older </label></div> </td>
+								<td><div><label> <input type="radio" value="18-24 years old" id="age_id" name="age"> 18-24 years old </label></div>
+                       <div><label> <input type="radio" value="25-44 years old" id="age_id" name="age"> 25-44 years old </label></div>
+					   <div><label> <input type="radio" value="45-64 years old" id="age_id" name="age"> 45-64 years old </label></div>
+					   <div><label> <input type="radio" value="65 years or older" id="age_id" name="age"> 65 years or older </label></div>
+					    </td>
 							</tr>
 							<tr>
 								<td> Hearing Status </td>
@@ -155,15 +151,44 @@
  					   <div><label> <input type="radio" value="other" id="method_id" name="method"> Other </label></div></td>
 							</tr>
 							<tr>
+								
+								<!-- May need to clarify down the road but good to go for now -->
 								<td> Reason for Contact </td> 
-								<!-- Reason for Contact (waiting for more from Timothy)-->
-								<td> <div><label> <input type="radio" value="communication access" id="reason_id" name="method"> Communication Access </label></div>
-                        <div><label> <input type="radio" value="hearing assistive technology" id="reason_id" name="method"> Hearing Assistive Technology </label></div>
- 					   <div><label> <input type="radio" value="cart" id="reason_id" name="method"> CART </label></div>
- 					   <div><label> <input type="radio" value="technology assistance" id="reason_id" name="method"> Technology Assistance </label></div>
- 					   <div><label> <input type="radio" value="referral" id="reason_id" name="method"> Referral </label></div>
-					   <div><label> <input type="radio" value="other" id="reason_id" name="method"> Other </label></div></td>
-							</tr>
+								<td><div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select One
+									    <span class="caret"></span></button>
+									    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+									      <li role="presentation" class="dropdown-header">Communication Access: Auxiliary Services</li>
+									      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Interpreters</a></li>
+									      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CART</a></li>
+									      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SSP</a></li>
+									      <li role="presentation" class="divider"></li>
+									      <li role="presentation" class="dropdown-header">Communication Access: Auxiliary Aids</li>
+									      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hearing Assistive Technology</a></li>
+										  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Telecommunications Equipment</a></li>
+										  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alerting Devices</a></li>
+										  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Information or Referral</a></li>
+									    <li role="presentation" class="divider"></li>
+								      <li role="presentation" class="dropdown-header">General Resources/Referrals/Technical Assistance</li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Research</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Websites</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Laws</a></li>
+									  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Information on Navigating Systems</a></li>
+								      <li role="presentation" class="divider"></li>
+								      <li role="presentation" class="dropdown-header">Request for Training</li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Law Enforcement</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Schools</a></li>
+								      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Workplace</a></li>
+								      <li role="presentation" class="divider"></li>
+										</ul>
+									  </div>
+								  </td>
+							  </tr>
+								
+						
+							
+							
+							
 							<tr>
 								<td> Person Taking Call </td> 
 								<!-- Person taking call (add user logged in autofill)-->
@@ -180,9 +205,12 @@
                            <option value="newOutreach2">New Outreach2</option>
                        </select></td>
 							</tr>
+							
+							
+							<!-- Result of Call (Inquiry) Commenting out for alternative version for now 
+								
 							<tr>
 								<td> Result of Inquiry </td>
-								<!-- Result of Call (Inquiry) Waiting for info from Timothy -->
 								<td><div><label> <input type="checkbox" value=""> Referred to TEDP </label></div>
 						<div><label> <input type="checkbox" value=""> Referred to LAS </label></div>
 						<div><label> <input type="checkbox" value=""> Referred to Grant Program </label></div>
@@ -193,6 +221,15 @@
 						<div><label> <input type="checkbox" value=""> Referred to Attorney General </label></div>
 						<div><label> <input type="checkbox" value=""> Other </label></div> </td>
 							</tr>
+						-->
+							
+							<!--Result of Call (Inquiry) Alternate Version requested by Timothy -->
+							<tr>
+								<td> Result of Inquiry </td>
+								<td><textarea name="resultofinquiry"></textarea> </td>
+							</tr>
+							
+							
 							<tr>
 								<td> Technical Assistance Provided (Notes) </td>
 								<td><textarea name="technicalassistance"></textarea> </td>
