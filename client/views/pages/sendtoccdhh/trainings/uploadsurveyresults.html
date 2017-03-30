@@ -3,19 +3,33 @@
     <!-- Page heading -->
     {{> pageHeading title='Upload Survey Results' category='Other pages' }}
 
-    <div class="wrapper wrapper-content">
-        <div class="middle-box text-center animated fadeInRightBig">
+
            
+			<!--  Upload pre survey results to store (file drop) -->
+		    <br><br><h3>Upload Pre Survey Results</h3>
+		   <div class="fileinput fileinput-new" data-provides="fileinput">
+		       <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span>
+		       <span class="fileinput-exists">Change</span><input type="file" name="..."/></span>
+		       <span class="fileinput-filename"></span>
+		       <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+		   </div>
 		   
 		   
-		   HOLD ON THIS
 		   
 		   
-		   
-		   <!--  Upload pre survey results to store (file drop) -->
 		   <!--  Upload post survey results to store (file drop)-->
+		    <br><br><h3>Upload Post Survey Results</h3>
+		   <div class="fileinput fileinput-new" data-provides="fileinput">
+		       <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span>
+		       <span class="fileinput-exists">Change</span><input type="file" name="..."/></span>
+		       <span class="fileinput-filename"></span>
+		       <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+		   </div>
+		   
+		   <br><br><h3>Coming Soon: Chart Area and Survey Statistics?</h3>
 		   <!--  Upload pre survey results question by question (use knobs to show who answered what?) -->
 		   
+		   <!--HOLD ON THIS
 		   Question #1
 		   how many answered A
 		   how many answered B
@@ -32,40 +46,30 @@
 		   how many answered A
 		   how many answered B
 		   how many answered C
-		   how many answered D
+		   how many answered D --> 
 		  
-		   <!--  Upload post survey results question by question (use knobs to show who answered what?)-->
-		   Question #1
-		   how many answered A
-		   how many answered B
-		   how many answered C
-		   how many answered D
-		   
-		   Question #2
-		   how many answered A
-		   how many answered B
-		   how many answered C
-		   how many answered D
-		   
-		   Question #3
-		   how many answered A
-		   how many answered B
-		   how many answered C
-		   how many answered D
+		
+		
 		   
 		   
-		   <!--  Comments from surveys  (text box with submit button?) -->
+		   <!-- Comments from surveys  (text box with submit button?) -->
 		   
 		   
 		   
-		   <!-- Charts area -->
+		   <!-- Charts area: Results from surveys represented visually in a chart? -->
 		   
-		   Results from surveys represented visually in a chart?
 		   
-		   <!-- Submit/Cancel button (see consults page -->
+		   
+		<!-- Submit and Cancel button -->
+           <div class="hr-line-dashed"></div>
+           <div class="form-group">
+               <div class="col-sm-4 col-sm-offset-2">
+                 <br><br>  <button class="btn btn-white" type="submit">Cancel</button>
+                   <button class="btn btn-primary" type="submit">Save changes</button>
+               </div>
+           </div>			
+		   
 		   
 		  
-		   
-        </div>
-    </div>
+		
 </template>
