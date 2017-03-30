@@ -8,6 +8,13 @@ Template.topNavbar.rendered = function(){
 };
 
 Template.topNavbar.events({
+	'click .logout': function(event) {
+		event.preventDefault();
+		alert("signed out");
+		Meteor.logout();
+		
+	},
+
 
     // Toggle left navigation
     'click #navbar-minimalize': function(event){

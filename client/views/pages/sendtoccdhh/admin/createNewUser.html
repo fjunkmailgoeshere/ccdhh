@@ -4,6 +4,16 @@
 
 		<BR>
 
+
+<ul>
+    <li><a href="">Home</a></li>
+    {{#if currentUser}}
+        <li><a href="#" class="logout">Logout</a></li>
+    {{else}}
+        <li><a href="">Register</a></li>
+        <li><a href="">Login</a></li>
+    {{/if}}
+</ul>
 	<form class="form-horizontal">
 
 		<div class="form-group">
