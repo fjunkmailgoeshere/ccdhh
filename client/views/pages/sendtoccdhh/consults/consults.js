@@ -1,7 +1,18 @@
 /* code here */
-/*Template.ccdhhConsults.rendered=function() {
-	$('#my-datepicker').datepicker();
-}*/
+*Template.ccdhhConsults.rendered=function() {
+
+// Initialize datapicker
+
+/*
+	$('#data_1 .input-group.date').datepicker({
+    todayBtn: "linked",
+    keyboardNavigation: false,
+    forceParse: false,
+    calendarWeeks: true,
+    autoclose: true
+});
+*/
+
 
 
 //Consults = new Mongo.Collection('consults');
