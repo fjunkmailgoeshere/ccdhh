@@ -1,10 +1,10 @@
 /* code here */
-Template.consults.rendered=function() {
+Template.ccdhhConsults.rendered=function() {
 	$('#my-datepicker').datepicker();
 }
 
 
-Consults = new Mongo.Collection('consults');
+//Consults = new Mongo.Collection('consults');
 
 Template.ccdhhConsults.events({
 	'submit form': function(event) {
