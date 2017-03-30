@@ -1,4 +1,16 @@
 Template.mainLayout.rendered = function(){
+	routeName = FlowRouter.getRouteName();
+	user = Meteor.userId();
+
+	if (user) { 
+	} else {
+		if (routeName != 'ccdhhCreateNewUser') {
+			FlowRouter.go('/ccdhhLogin');
+		}
+
+	}
+
+
 
     // Minimalize menu when screen is less than 768px
     $(window).bind("resize load", function () {
@@ -7,6 +19,7 @@ Template.mainLayout.rendered = function(){
         } else {
             $('body').removeClass('body-small')
         }
+
     });
 
     // Fix height of layout when resize, scroll and load
@@ -54,3 +67,4 @@ Template.mainLayout.rendered = function(){
 
 
 };
+

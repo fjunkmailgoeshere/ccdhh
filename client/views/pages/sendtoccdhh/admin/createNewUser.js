@@ -1,13 +1,10 @@
 
-
 Template.ccdhhCreateNewUser.events({
 	'submit form': function(event) {
 		event.preventDefault();
 
 		email = event.target.email.value;
 		password = event.target.password.value;
-
-		alert(password);
 
 		profile = {}
 		profile["firstName"] = event.target.firstname.value;
@@ -18,6 +15,13 @@ Template.ccdhhCreateNewUser.events({
 	            email: email,
 	            password: password,
 		    profile: profile
-	        });
+	        }, function(error) {
+
+			if (error) { 
+				alert(error.reason);
+			} else {
+				alert("User creation successful");
+			}
+		});
 	}
 });

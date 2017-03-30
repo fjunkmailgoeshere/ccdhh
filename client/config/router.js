@@ -40,7 +40,8 @@ FlowRouter.route('/ccdhhregister', {
 FlowRouter.route('/ccdhhLogin', {
     action: function() {
         BlazeLayout.render("blankLayout", {content: "ccdhhLogin"});
-    }
+    },
+    name: "ccdhhLogin"
 });
 
 FlowRouter.route('/ccdhh404error', {
@@ -79,7 +80,8 @@ FlowRouter.route('/ccdhhAdmin', {
 FlowRouter.route('/ccdhhCreateNewUser', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhCreateNewUser"});
-    }
+    },
+    name: "ccdhhCreateNewUser"
 });
 
 FlowRouter.route('/ccdhhEditUser', {
