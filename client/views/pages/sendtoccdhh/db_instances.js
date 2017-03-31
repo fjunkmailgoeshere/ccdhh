@@ -1,2 +1,2 @@
-Consults = new Mongo.Collection('consults');
+Consults = new Meteor.Collection('consults');
 
