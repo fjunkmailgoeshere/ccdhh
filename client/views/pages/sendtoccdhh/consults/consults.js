@@ -1,3 +1,4 @@
+
 /* code here */
 /*Template.ccdhhConsults.rendered=function() {
 
@@ -31,7 +32,7 @@ Template.ccdhhConsults.events({
 		var reason = [];
 		alert(event);
 
-		if (event.target.interpreters.checked == true) { 
+		/*if (event.target.interpreters.checked == true) { 
 			reason.push(event.target.communicationaccess.value);
 		}
 		if (event.target.cart.checked == true) { 
@@ -82,7 +83,7 @@ Template.ccdhhConsults.events({
 		}
 		if (event.target.workplace.checked == true) { 
 			reason.push(event.target.cart.value);
-		}
+		}*/
 		
 
 		// B/C I temporarily commented out all the stuff above, this will print an empty array to console
@@ -111,3 +112,6 @@ Template.ccdhhConsults.events({
 	}
 	
 });
+consults.js
+Open with
+Displaying consults.js.
