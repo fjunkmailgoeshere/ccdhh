@@ -1,5 +1,5 @@
 /* code here */
-*Template.ccdhhConsults.rendered=function() {
+/*Template.ccdhhConsults.rendered=function() {
 
 // Initialize datapicker
 
@@ -14,10 +14,10 @@
 */
 	
     // Initialize i-check plugin
-    $('.i-checks').iCheck({
-        checkboxClass: 'icheckbox_square-green',
-        radioClass: 'iradio_square-green'
-    });
+//    $('.i-checks').iCheck({
+ //       checkboxClass: 'icheckbox_square-green',
+ //       radioClass: 'iradio_square-green'
+ //   });
 
 
 
