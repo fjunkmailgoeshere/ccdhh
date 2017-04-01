@@ -1,0 +1,103 @@
+<template name= "ccdhhConsults">
+	<!-- Page heading -->
+	{{> pageHeading title='Consults' category='Ninja Turtle Fortress - COWABUNGA' }}
+
+	<BR>
+	
+	<form class="form-horizontal">
+
+		<!-- Get Date of Consultation -->
+		<div class="form-group" id="data_1">
+			<label class="col-sm-2 control-label">Date of Consultation</label>
+			<div class="col-sm-10 input-group date">
+				<span class="input-group-addon">&nbsp;&nbsp;<i class="fa fa-calendar"></i></span><input type="text" class="form-control" name="date" value="03/04/2014">
+			</div>
+		</div>
+
+		<!-- Get Name of Consulting Client -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Name</label>
+			<div class="col-sm-10"><input type="text" class="form-control" name="name"></div>
+		</div>
+
+
+		<!-- Get Gender Identity of Consulting Client -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Gender</label>
+			<div class="col-sm-10">
+                <div class="i-checks"><label> <input type="radio" name="gender" value="male"> Male </label></div>
+                <div class="i-checks"><label> <input type="radio" name="gender" value="female"> <i></i> Female </label></div>
+                <div class="i-checks"><label> <input type="radio" name="gender" value="transgender"> <i></i> Transgender </label></div>				
+                <div class="i-checks"><label> <input type="radio" name="gender" value="nonbinary"> <i></i> Non-binary </label></div>
+                <div class="i-checks"><label> <input type="radio" name="gender" value="other"> <i></i> Other </label></div>
+			</div>
+		</div>
+		
+		<!-- Get Age Range of Consulting Client -->
+		
+		<!-- Get Hearing Status of Consulting Client -->
+		
+		<!-- Get Ethnicity of Consulting Client -->
+		
+		<!-- Get County of Consulting Client -->
+		
+		<!-- Get Reason For Contact of Consulting Client -->
+		
+		<!-- Get Entity of Consulting Client -->
+		
+		<!-- Get Method of Contact for Consulting Client -->
+		
+		<!-- Get Reason for Contact for Consulting Client -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Reason for contact</label>
+			<div class="col-sm-10">
+                <div class="i-checks"><label> <input type="checkbox" name="reason_interpreters" value="interpreters"> <i></i> Interpreters</label></div>
+                <div class="i-checks"><label> <input type="checkbox" name="reason_cart" value="CART"> <i></i> CART </label></div>
+			</div>
+		</div>
+		
+		
+		<!-- Extra note: we will eventually have to change persontakingcall to dynamically render based on created and historical users, and tag to _id.  Will work on post-beta -->
+		<!-- Get Person Taking the Call -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Person taking call</label>
+			<div class="col-sm-10">
+				<select class="form-control m-b" name="persontakingcall">
+                	<option value="Timothy">Timothy</option>
+                	<option value="Cliff">Cliff</option>
+                	<option value="Cheri">Cheri</option>
+                	<option value="JoAnne">JoAnne</option>
+                	<option value="Mandy">Mandy</option>
+                	<option value="Ryan">Ryan</option>
+                	<option value="Jason">Jason</option>
+                	<option value="newOutreach1">New Outreach 1</option>
+                	<option value="newOutreach2">New Outreach2</option>
+				</select>
+			</div>
+		</div>
+		
+		<!-- Get Result of Inquiry -->
+		
+		<!-- Get Notes On the Call (Technical Assistance Provided)-->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Notes / Technical Assistance Provided</label>
+			<div class="col-sm-10">
+				<textarea name="notes"></textarea>
+			</div>
+		</div>
+		
+		<!-- Get Policies and Procedures Advisement Provided y/n checkbox -->
+		
+		<!-- Submit the Form -->
+    	<div class="form-group">
+ 	    	<div class="col-sm-4 col-sm-offset-2">
+            	<button class="btn btn-primary" type="submit">Save changes</button>
+            </div>
+        </div>
+
+	</form>	
+	
+
+	
+</template>				
+	
