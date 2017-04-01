@@ -14,11 +14,11 @@
 });
 */
 	
-    // Initialize i-check plugin
-//    $('.i-checks').iCheck({
- //       checkboxClass: 'icheckbox_square-green',
- //       radioClass: 'iradio_square-green'
- //   });
+ Initialize i-check plugin
+    $('.i-checks').iCheck({
+       checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green'
+    });
 
 
 
@@ -98,7 +98,7 @@ Template.ccdhhConsults.events({
 			entity: event.target.entity.value,
 			hearingstatus: event.target.hearingstatus.value,
 			methodofcontact: event.target.methodofcontact.value,
-			//reasonforcontact: event.target.reasonforcontact.value,
+			reasonforcontact: event.target.reasonforcontact.value,
 			age: event.target.age.value,
 			gender: event.target.gender.value,
 			persontakingcall: event.target.persontakingcall.value,
