@@ -52,7 +52,7 @@ Template.ccdhhConsults.events({
 		//Policy and Procedures advisement true/false
 		var policy = [];
 		if (event.target.policy.checked == true) { 
-			reason.push(event.target.policy.value);
+			policy.push(event.target.policy.value);
 		}
 
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
