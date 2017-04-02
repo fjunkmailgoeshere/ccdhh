@@ -20,6 +20,10 @@ Template.ccdhhConsults.events({
 			date: event.target.date.value,
 			name: event.target.name.value,
 			gender: event.target.gender.value,
+			age: event.target.age.value,
+			hearingstatus: event.target.hearingstatus.value,
+			ethnicity: event.target.ethnicity.value,
+			entity: event.target.entity.value,
 			reasonforcontact: reason,
 			persontakingcall: event.target.persontakingcall.value,
 			notes: event.target.notes.value
