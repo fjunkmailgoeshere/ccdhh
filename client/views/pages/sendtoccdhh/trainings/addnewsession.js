@@ -5,6 +5,7 @@ Template.ccdhhAddNewSession.events({
 	'submit form': function(event) {
 		event.preventDefault();
 		
+		/*
 		//Checkboxes for Activity Type
 		var reason = [];
 		if (event.target.activity_activity1.checked == true) {
@@ -22,7 +23,56 @@ Template.ccdhhAddNewSession.events({
 		if (event.target.activity_activity5.checked == true) {
 			activity.push(event.target.activity_activity5.value);
 		}
+		*/
 		
+		/*
+		//Checkboxes for Trainer
+		var reason = [];
+		if (event.target.trainer_trainer1.checked == true) {
+			trainer.push(event.target.trainer_trainer1.value);
+		}
+		if (event.target.trainer_trainer2.checked == true) {
+			trainer.push(event.target.trainer_trainer2.value);
+		}
+		if (event.target.trainer_trainer3.checked == true) {
+			trainer.push(event.target.trainer_trainer3.value);
+		}
+		if (event.target.trainer_trainer4.checked == true) {
+			trainer.push(event.target.trainer_trainer4.value);
+		}
+		if (event.target.trainer_trainer5.checked == true) {
+			trainer.push(event.target.trainer_trainer5.value);
+		}
+		if (event.target.trainer_trainer6.checked == true) {
+			trainer.push(event.target.trainer_trainer6.value);
+		}
+		if (event.target.trainer_trainer7.checked == true) {
+			trainer.push(event.target.trainer_trainer7.value);
+		}
+		if (event.target.trainer_trainer8.checked == true) {
+			trainer.push(event.target.trainer_trainer8.value);
+		}
+		*/
+		
+		/*
+		//Checkboxes for Training Materials Used
+		var reason = [];
+		if (event.target.materials_powerpoint.checked == true) {
+			materials.push(event.target.materials_powerpoints.value);
+		}
+		if (event.target.materials_surveys.checked == true) {
+			materials.push(event.target.materials_surveys.value);
+		}
+		if (event.target.materials_videos.checked == true) {
+			materials.push(event.target.materials_videos.value);
+		}
+		if (event.target.materials_scenarios.checked == true) {
+			materials.push(event.target.materials_scenarios.value);
+		}
+		if (event.target.materials.roleplay.checked == true) {
+			materials.push(event.target.materials_roleplay.value);
+		}
+		*/
 		
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
@@ -30,12 +80,12 @@ Template.ccdhhAddNewSession.events({
 			dateoftraining: event.target.dateoftraining.value,
 			titleoftraining: event.target.titleoftraining.value,
 			numberofattendees: event.target.numberofattendees.value,
-			activitytype: activity,
+			//activitytype: activity,
 			//locationoftraining: event.target.locationoftraining.value,
 			//county: event.target.county.value,
 			//lengthoftraining: event.target.lengthoftraining.value,
 			//trainer: trainer,
-			//trainingmaterialsused: trainingmaterialsused,
+			//trainingmaterialsused: materials,
 			//trainingnotes: event.target.trainingnotes.value
 				
 		};
