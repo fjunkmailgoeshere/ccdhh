@@ -48,6 +48,13 @@ Template.ccdhhConsults.events({
 			reason.push(event.target.reason_workplaces.value);
 		}	
 
+
+		//Policy and Procedures advisement true/false
+		var policy = [];
+		if (event.target.policy.checked == true) { 
+			reason.push(event.target.policy.value);
+		}
+
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
 			date: event.target.date.value,
@@ -63,7 +70,7 @@ Template.ccdhhConsults.events({
 			persontakingcall: event.target.persontakingcall.value,
 			results: event.target.results.value,
 			notes: event.target.notes.value,
-			policies: event.target.policies.value
+			policies: policy
 		};
 
 
