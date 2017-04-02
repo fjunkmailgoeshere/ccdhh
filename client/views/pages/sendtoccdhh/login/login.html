@@ -1,11 +1,11 @@
 <template name="ccdhhLogin">
-	<right><IMG SRC="img/ccdhhlogo.png"></right> 
+	<header><IMG SRC="img/ccdhhlogo.png"></header> 
 	
 
            
 
            
-            <h3>Outreach</h3>
+           <!-- <h3>Outreach</h3>
         <div class="col-lg-4 center">
             <form class="m-t-md" role="form">
                 <div class="form-group">
@@ -15,11 +15,45 @@
                     <input type="password" class="form-control" placeholder="Password" required="" name="Password">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Login</button>
+-->
+<BR>
+			<div class="col-lg-5">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                      <!--  {{>iboxTools}} -->
+                    </div>
+                <div class="ibox-content">
+                    <form class="form-horizontal">
+                            
+                            <div class="form-group"><label class="col-lg-2 control-label">Email</label>
+
+                                <div class="col-lg-10"><input type="email" placeholder="Username" class="form-control"> <span class="help-block m-b-none"></span>
+                                </div>
+                            </div>
+                            <div class="form-group"><label class="col-lg-2 control-label">Password</label>
+
+                                <div class="col-lg-10"><input type="password" placeholder="Password" class="form-control"></div>
+                            </div>
+                           <!-- <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <div class="i-checks"><label> <input type="checkbox"><i></i> Remember me </label></div>
+                                </div>
+                            </div>  -->
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button class="btn btn-sm btn-white" type="submit">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
 
                 <!--<a href="#"><small>Forgot password?</small></a>
                 <p class="text-muted text-center"><small>Do not have an account?</small></p>
                 <a class="btn btn-sm btn-white btn-block" href="/register">Create an account</a>-->
-            </form>
+  <!--          </form>
             <p class="m-t"> <small>ktquiet &copy; 2017</small> </p>
-      </div>
+      </div>  -->
 </template>
