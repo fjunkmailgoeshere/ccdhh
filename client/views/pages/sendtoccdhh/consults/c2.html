@@ -55,7 +55,6 @@
                 <div class="i-checks"><label> <input type="radio" name="hearingstatus" value="hearing"> <i></i> Hearing </label></div>
 			</div>
 		</div>
-
 		
 		<!-- Get Ethnicity of Consulting Client -->
 		<div class="form-group">
@@ -73,6 +72,75 @@
 		</div>
 		
 		<!-- Get County of Consulting Client -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">County</label>
+			<div class="col-sm-10">
+				<select class="form-control m-b" name="county">
+					<option value="Adams">Adams</option>
+                	<option value="Alamosa">Alamosa</option>
+                    <option value="Arapahoe">Arapahoe</option>
+                    <option value="Archuleta">Archuleta</option>
+                    <option value="Baca">Baca</option>
+                    <option value="Bent">Bent</option>
+                	<option value="Boulder">Boulder</option>
+                    <option value="Broomfield">Broomfield (City and County of)</option>
+                    <option value="Chaffee">Chaffee</option>
+                    <option value="Cheyenne">Cheyenne</option>
+                    <option value="Clear Creek">Clear Creek</option>
+                    <option value="Conejos">Conejos</option>
+                    <option value="Costilla">Costilla</option>
+                    <option value="Crowley">Crowley</option>
+                    <option value="Custer">Custer</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Denver">Denver (City and County of)</option>
+                    <option value="Douglas">Douglas</option>
+                    <option value="Eagle">Eagle</option>
+                    <option value="El Paso">El Paso</option>
+                    <option value="Elbert">Elbert</option>
+                    <option value="Fremont">Fremont</option>
+                    <option value="Garfield">Garfield</option>
+                    <option value="Gilpin">Gilpin</option>
+                    <option value="Grand">Grand</option>
+                    <option value="Gunnison">Gunnison</option>
+                    <option value="Hinsdale">Hinsdale</option>
+                    <option value="Huerfano">Huerfano</option>
+                    <option value="Jackson">Jackson</option>
+                    <option value="Jefferson">Jefferson</option>
+                    <option value="Kiowa">Kiowa</option>
+                    <option value="Kit Carson">Kit Carson</option>
+                    <option value="La Plata">La Plata</option>
+                    <option value="Lake">Lake</option>
+                    <option value="Larimer">Larimer</option>
+                    <option value="Las Animas">Las Animas</option>
+                    <option value="Lincoln">Lincoln</option>
+                    <option value="Logan">Logan</option>
+                    <option value="Mesa">Mesa</option>
+                    <option value="Mineral">Mineral</option>
+                    <option value="Moffat">Moffat</option>
+                    <option value="Montezuma">Montezuma</option>
+                    <option value="Montrose">Montrose</option>
+                    <option value="Morgan">Morgan</option>
+                    <option value="Otero">Otero</option>
+                    <option value="Ouray">Ouray</option>
+                    <option value="Park">Park</option>
+                    <option value="Phillips">Phillips</option>
+                    <option value="Pitkin">Pitkin</option>
+                    <option value="Prowers">Prowers</option>
+                    <option value="Rio Blanco">Rio Blanco</option>
+                    <option value="Rio Grande">Rio Grande</option>
+                    <option value="Routt">Routt</option>
+                    <option value="Saguache">Saguache</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Miguel">San Miguel</option>
+                    <option value="Sedgwick">Sedgwick</option>
+                    <option value="Summit">Summit</option>
+                    <option value="Teller">Teller</option>
+                    <option value="Washington">Washington</option>
+                    <option value="Weld">Weld</option>
+                    <option value="Yuma">Yuma</option>	
+				</select>
+			</div>
+		</div>
 		
 		<!-- Get Reason For Contact of Consulting Client -->
 		
@@ -80,15 +148,24 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Entity</label>
 			<div class="col-sm-10">
-                <div class="i-checks"><label> <input type="radio" name="entity" value="entity1"> I - Individual </label></div>
-                <div class="i-checks"><label> <input type="radio" name="entity" value="entity2"> <i></i> GE - Government </label></div>
-                <div class="i-checks"><label> <input type="radio" name="entity" value="entity3"> <i></i> PE - Public </label></div>				
-                <div class="i-checks"><label> <input type="radio" name="entity" value="entity4"> <i></i> CO - Community </label></div>
-                <div class="i-checks"><label> <input type="radio" name="entity" value="entity5"> <i></i> PRE - Private </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="i_-_individual"> I - Individual </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="ge_-_government"> <i></i> GE - Government </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="pe_-_public"> <i></i> PE - Public </label></div>				
+                <div class="i-checks"><label> <input type="radio" name="entity" value="co_-_community"> <i></i> CO - Community </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="pre_-_private"> <i></i> PRE - Private </label></div>
 			</div>
 		</div>
 		
 		<!-- Get Method of Contact for Consulting Client -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Method of Contact</label>
+			<div class="col-sm-10">
+                <div class="i-checks"><label> <input type="radio" name="method" value="email"> Email </label></div>
+                <div class="i-checks"><label> <input type="radio" name="method" value="vp/phone"> <i></i> VP/Phone </label></div>
+                <div class="i-checks"><label> <input type="radio" name="method" value="in-person"> <i></i> In-Person </label></div>				
+                <div class="i-checks"><label> <input type="radio" name="method" value="other"> <i></i> Other </label></div>
+			</div>
+		</div>
 		
 		<!-- Get Reason for Contact for Consulting Client -->
 		<div class="form-group">
@@ -131,6 +208,12 @@
 		</div>
 		
 		<!-- Get Result of Inquiry -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Result of Inquiry</label>
+			<div class="col-sm-10">
+				<textarea name="results"></textarea>
+			</div>
+		</div>
 		
 		<!-- Get Notes On the Call (Technical Assistance Provided)-->
 		<div class="form-group">
@@ -141,6 +224,13 @@
 		</div>
 		
 		<!-- Get Policies and Procedures Advisement Provided y/n checkbox -->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Policies and Procedures Advisement Provided</label>
+			<div class="col-sm-10">
+                <div class="i-checks"><label> <input type="radio" name="policies" value="yes"> Yes </label></div>
+                <div class="i-checks"><label> <input type="radio" name="policies" value="no"> No </label></div>
+			</div>
+		</div>
 		
 		<!-- Submit the Form -->
     	<div class="form-group">

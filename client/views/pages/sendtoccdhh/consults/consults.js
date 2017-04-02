@@ -57,9 +57,13 @@ Template.ccdhhConsults.events({
 			hearingstatus: event.target.hearingstatus.value,
 			ethnicity: event.target.ethnicity.value,
 			entity: event.target.entity.value,
+			county: event.target.county.value,
+			method: event.target.method.value,
 			reasonforcontact: reason,
 			persontakingcall: event.target.persontakingcall.value,
-			notes: event.target.notes.value
+			results: event.target.results.value,
+			notes: event.target.notes.value,
+			policies: event.target.policies.value
 		};
 
 
