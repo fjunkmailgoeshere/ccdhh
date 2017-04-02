@@ -5,6 +5,7 @@ Template.ccdhhAddNewSession.events({
 	'submit form': function(event) {
 		event.preventDefault();
 		
+		
 //Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
 			modules: event.target.modules.value,
@@ -26,14 +27,29 @@ Template.ccdhhAddNewSession.events({
 		console.log(data);
 		
 		//Insert the data object into the DB
-		//ccdhhAddNewSession.insert(data);
+	AddNewSession.insert(data);
 		
 	}
 	
-});
+	});	
 	
 Template.ccdhhAddNewSession.rendered = function(){
 	
  
-		
 	}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
