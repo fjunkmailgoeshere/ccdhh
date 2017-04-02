@@ -1,0 +1,35 @@
+<template name="ccdhhAddNewSession">
+	<!--Page heading-->
+	{{>pageHeading title='Add New Session' category='Ninja Turtle Fortress - COWABUNGA' }}
+	
+<BR>
+<div class="ibox-content">
+<form class="form-horizontal">
+
+	<!-- Select Training Module-->
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Modules</label>
+		<div class="col-sm-10">
+			<select class="form-control m-b" name="modules">
+				<option value="">Select</option>
+                <option value="Module 1">Module 1</option>
+				<option value="Module 2">Module 2</option>
+				<option value="Module 3">Module 3</option>
+				<option value="Module 4">Module 4</option>
+				<option value="Module 5">Module 5</option>
+			</select>
+		</div>
+	</div>
+	
+
+    	<div class="form-group">
+ 	    	<div class="col-sm-4 col-sm-offset-2">
+            	<button class="btn btn-primary" type="submit">Save changes</button>
+            </div>
+        </div>
+
+	</form>
+	</div>
+
+</template>
+		
