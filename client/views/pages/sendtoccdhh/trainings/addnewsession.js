@@ -8,16 +8,16 @@ Template.ccdhhAddNewSession.events({
 //Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
 			modules: event.target.modules.value,
-			dateoftraining: event.target.dateoftraining.value,
-			titleoftraining: event.target.titleoftraining.value,
-			numberofpeopleattended: event.target.numberofpeopleattended.value,
-			activitytype: activitytype,
-			locationoftraining: event.target.locationoftraining.value,
-			county: event.target.county.value,
-			lengthoftraining: event.target.lengthoftraining.value,
-			trainer: trainer,
-			trainingmaterialsused: trainingmaterialsused,
-			trainingnotes: event.target.trainingnotes.value
+			//dateoftraining: event.target.dateoftraining.value,
+			//titleoftraining: event.target.titleoftraining.value,
+			//numberofpeopleattended: event.target.numberofpeopleattended.value,
+			//activitytype: activitytype,
+			//locationoftraining: event.target.locationoftraining.value,
+			//county: event.target.county.value,
+			//lengthoftraining: event.target.lengthoftraining.value,
+			//trainer: trainer,
+			//trainingmaterialsused: trainingmaterialsused,
+			//trainingnotes: event.target.trainingnotes.value
 				
 		};
 		
@@ -26,7 +26,7 @@ Template.ccdhhAddNewSession.events({
 		console.log(data);
 		
 		//Insert the data object into the DB
-		ccdhhAddNewSession.insert(data);
+		//ccdhhAddNewSession.insert(data);
 		
 	}
 	
@@ -36,27 +36,4 @@ Template.ccdhhAddNewSession.rendered = function(){
 	
  
 		
-	}	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-};
+	}
