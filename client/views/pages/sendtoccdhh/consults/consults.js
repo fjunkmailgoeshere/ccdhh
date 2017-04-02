@@ -14,6 +14,39 @@ Template.ccdhhConsults.events({
 		if (event.target.reason_cart.checked == true) { 
 			reason.push(event.target.reason_cart.value);
 		}				
+		if (event.target.reason_ssp.checked == true) { 
+			reason.push(event.target.reason_ssp.value);
+		}	
+		if (event.target.reason_hearing_assistive_technology.checked == true) { 
+			reason.push(event.target.reason_hearing_assistive_technology.value);
+		}	
+		if (event.target.reason_telecommunications_equipment.checked == true) { 
+			reason.push(event.target.reason_telecommunications_equipment.value);
+		}	
+		if (event.target.reason_alerting_devices.checked == true) { 
+			reason.push(event.target.reason_alerting_devices.value);
+		}	
+		if (event.target.reason_general_resources.checked == true) { 
+			reason.push(event.target.reason_general_resources.value);
+		}	
+		if (event.target.reason_research.checked == true) { 
+			reason.push(event.target.reason_reearch.value);
+		}	
+		if (event.target.reason_websites.checked == true) { 
+			reason.push(event.target.reason_websites.value);
+		}	
+		if (event.target.reason_information_on_navigating_systems.checked == true) { 
+			reason.push(event.target.reason_information_on_navigating_systems.value);
+		}	
+		if (event.target.reason_law_enforcement.checked == true) { 
+			reason.push(event.target.reason_law_enforcement.value);
+		}	
+		if (event.target.reason_schools.checked == true) { 
+			reason.push(event.target.reason_schools.value);
+		}	
+		if (event.target.reason_workplaces.checked == true) { 
+			reason.push(event.target.reason_workplaces.value);
+		}	
 
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
