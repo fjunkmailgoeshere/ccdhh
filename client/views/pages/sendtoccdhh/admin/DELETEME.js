@@ -1,4 +1,3 @@
-
 Template.ccdhhDeleteMe.events({
 	'submit form': function(event) {
 		event.preventDefault();

@@ -1,13 +1,15 @@
 <template name= "ccdhhAdminApproval">
-	<!-- Page heading -->
-	{{> pageHeading title='Admin Approval'}}
+	{{#if isAdmin}}
+		<!-- Page heading -->
+		{{> pageHeading title='Admin Approval'}}
 
-	<BR>
+		<BR>
 
-	<form>
-
-	<p> [ content disabled for now ] </p>
-	</form>
+		<form>
+	
+		<p> [ content disabled for now ] </p>
+		</form>
+	{{/if}}
 	
 </template>				
 	

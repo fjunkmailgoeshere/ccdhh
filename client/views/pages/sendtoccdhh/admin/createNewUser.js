@@ -1,3 +1,13 @@
+Template.ccdhhCreateNewUser.helpers({
+        'isAdmin': function() {
+                if(Meteor.user().profile["role"] == "administrator") {
+                        return true;
+                }
+                return false;
+        }
+
+});
+
 
 Template.ccdhhCreateNewUser.events({
 	'submit form': function(event) {

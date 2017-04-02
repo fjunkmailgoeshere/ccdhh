@@ -1,13 +1,17 @@
 <template name= "ccdhhAdmin">
 	<!-- Page heading -->
 	{{> pageHeading title='Admin'}}
-	
-	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhCreateNewUser"> Create New User </a>
-	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhEditUser"> Edit Permissions/User</a>
+
+	{{#if isAdmin}}	
+		<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhCreateNewUser"> Create New User </a>
+		<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhEditUser"> Edit Permissions/User</a>
+	{{/if}}
 	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhChangePassword"> Change Password</a>
+
+	{{#if isAdmin}}
 	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhBackupData"> Backup Data</a>
 	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhAdminApproval"> Admin Approval System</a>
-
+	{{/if}}
 
 	
 </template>				
