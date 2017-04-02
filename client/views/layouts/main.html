@@ -1,4 +1,5 @@
 <template name="mainLayout">
+{{#if currentUser}}
     <!-- Wrapper-->
     <div id="wrapper">
 
@@ -25,4 +26,8 @@
 
     </div>
     <!-- End wrapper-->
+{{else}}
+{{> notLoggedIn}}
+
+{{/if}}
 </template>
