@@ -5,9 +5,9 @@ Template.ccdhhAddNewSession.events({
 	'submit form': function(event) {
 		event.preventDefault();
 		
-		/*
+		
 		//Checkboxes for Activity Type
-		var reason = [];
+		var activity = [];
 		if (event.target.activity_activity1.checked == true) {
 			activity.push(event.target.activity_activity1.value);
 		}
@@ -23,11 +23,11 @@ Template.ccdhhAddNewSession.events({
 		if (event.target.activity_activity5.checked == true) {
 			activity.push(event.target.activity_activity5.value);
 		}
-		*/
 		
-		/*
+		
+		
 		//Checkboxes for Trainer
-		var reason = [];
+		var trainer = [];
 		if (event.target.trainer_trainer1.checked == true) {
 			trainer.push(event.target.trainer_trainer1.value);
 		}
@@ -52,13 +52,13 @@ Template.ccdhhAddNewSession.events({
 		if (event.target.trainer_trainer8.checked == true) {
 			trainer.push(event.target.trainer_trainer8.value);
 		}
-		*/
 		
-		/*
+		
+		
 		//Checkboxes for Training Materials Used
-		var reason = [];
+		var materials = [];
 		if (event.target.materials_powerpoint.checked == true) {
-			materials.push(event.target.materials_powerpoints.value);
+			materials.push(event.target.materials_powerpoint.value);
 		}
 		if (event.target.materials_surveys.checked == true) {
 			materials.push(event.target.materials_surveys.value);
@@ -69,10 +69,9 @@ Template.ccdhhAddNewSession.events({
 		if (event.target.materials_scenarios.checked == true) {
 			materials.push(event.target.materials_scenarios.value);
 		}
-		if (event.target.materials.roleplay.checked == true) {
+		if (event.target.materials_roleplay.checked == true) {
 			materials.push(event.target.materials_roleplay.value);
 		}
-		*/
 		
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
@@ -80,13 +79,13 @@ Template.ccdhhAddNewSession.events({
 			dateoftraining: event.target.dateoftraining.value,
 			titleoftraining: event.target.titleoftraining.value,
 			numberofattendees: event.target.numberofattendees.value,
-			//activitytype: activity,
-			//locationoftraining: event.target.locationoftraining.value,
-			//county: event.target.county.value,
-			//lengthoftraining: event.target.lengthoftraining.value,
-			//trainer: trainer,
-			//trainingmaterialsused: materials,
-			//trainingnotes: event.target.trainingnotes.value
+			activitytype: activity,
+			locationoftraining: event.target.locationoftraining.value,
+			county: event.target.county.value,
+			lengthoftraining: event.target.lengthoftraining.value,
+			trainer: trainer,
+			trainingmaterialsused: materials,
+			trainingnotes: event.target.trainingnotes.value
 				
 		};
 		
