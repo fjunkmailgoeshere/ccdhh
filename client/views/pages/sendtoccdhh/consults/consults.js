@@ -79,7 +79,16 @@ Template.ccdhhConsults.events({
 		console.log(data);
 
 		//Insert the data object into the DB
-		Consults.insert(data);
+		//Consults.insert(data);
+
+
+		Meteor.call('insertConsults', data, function(error, results) {
+			if (error) {
+				alert(error);
+			} else {
+				alert("Data inserted into database");
+			}
+		});
 
 	}
 	

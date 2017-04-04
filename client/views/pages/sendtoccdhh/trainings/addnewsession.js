@@ -94,16 +94,24 @@ Template.ccdhhAddNewSession.events({
 		console.log(data);
 		
 		//Insert the data object into the DB
-	AddNewSession.insert(data);
+		//AddNewSession.insert(data);
+
+		Meteor.call('insertTrainings', data, function(error, results) {
+			if (error) {
+				alert(error);
+			} else {
+				alert("Data inserted into database");
+			}
+		});
 		
 	}
 	
-	});	
+});	
 	
 Template.ccdhhAddNewSession.rendered = function(){
 	
  
-	}
+}
 		
 	
 	
