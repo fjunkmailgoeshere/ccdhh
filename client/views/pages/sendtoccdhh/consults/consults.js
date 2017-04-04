@@ -88,8 +88,9 @@ Template.ccdhhConsults.events({
 			} else {
 				alert("Data inserted into database");
 			}
+			
 		});
-
+		event.target.reset();
 	}
 	
 });
