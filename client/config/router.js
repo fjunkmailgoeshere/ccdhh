@@ -8,9 +8,15 @@ FlowRouter.route('/', {
     }
 });
 
+//FlowRouter.route('/main', {
+//    action: function() {
+//        BlazeLayout.render("mainLayout", {content: "main"});
+//    }
+//});
+
 FlowRouter.route('/main', {
     action: function() {
-        BlazeLayout.render("mainLayout", {content: "main"});
+        BlazeLayout.render("mainLayout", {content: "ccdhhDashboard"});
     }
 });
 
