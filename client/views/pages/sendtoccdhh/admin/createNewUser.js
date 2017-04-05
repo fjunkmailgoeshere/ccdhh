@@ -20,8 +20,23 @@ Template.ccdhhCreateNewUser.events({
 		profile["firstName"] = event.target.firstname.value;
 		profile["lastName"] = event.target.lastname.value;
 		profile["role"] = event.target.account.value;
+		profile["active"] = True;
+		profile["photo"] = "";
 
-	        Accounts.createUser({
+		packedData = {}
+		packedData["email"] = email;
+		packedData["password"] = password;
+		packedData["profile"] = profile;
+	
+		Meteor.call('createUserFromAdmin', packedData, function(error){
+			if (error) { 
+				alert(error.reason);
+			} else {
+				alert("User creation successful");
+			}
+
+		});
+	        /*Accounts.createUser({
 	            email: email,
 	            password: password,
 		    profile: profile
@@ -32,6 +47,6 @@ Template.ccdhhCreateNewUser.events({
 			} else {
 				alert("User creation successful");
 			}
-		});
+		});*/
 	}
 });

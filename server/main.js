@@ -24,8 +24,24 @@ Meteor.methods({
 		}
 		return Trainings.insert(data);
 
+	},
+
+	'createUserFromAdmin': function(packedData) {
+		console.log(packedData);
+		//unpack
+		var email = packedData["email"]
+		var password = packedData["password"]
+		var profile = packedData["profile"]
+
+
+		Accounts.createUser({
+			email: email,
+			password: password,
+			profile: profile
+		});
 	}
 });
+
 
 
 Meteor.startup(() => {
