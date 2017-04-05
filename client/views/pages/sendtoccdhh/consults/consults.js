@@ -55,9 +55,13 @@ Template.ccdhhConsults.events({
 			policy = true;
 		}
 
+		//Convert date string to date object before inserting into DB
+		theDate = new Date(event.target.date.value);
+		
+
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
-			date: event.target.date.value,
+			date: theDate,
 			name: event.target.name.value,
 			gender: event.target.gender.value,
 			age: event.target.age.value,

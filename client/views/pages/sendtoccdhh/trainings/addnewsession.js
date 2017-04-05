@@ -73,10 +73,15 @@ Template.ccdhhAddNewSession.events({
 			materials.push(event.target.materials_roleplay.value);
 		}
 		
+		//Convert date string to date object before inserting into DB
+		theTrainingDate = new Date(event.target.dateoftraining.value);
+		
+		
+		
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
 			modules: event.target.modules.value,
-			dateoftraining: event.target.dateoftraining.value,
+			dateoftraining: theTrainingDate,
 			titleoftraining: event.target.titleoftraining.value,
 			numberofattendees: event.target.numberofattendees.value,
 			activitytype: activity,
