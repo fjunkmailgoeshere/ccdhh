@@ -3,15 +3,15 @@
 	{{> pageHeading title='Admin'}}
 
 	{{#if isAdmin}}	
-		<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhCreateNewUser"> Create New User </a>
-		<!--<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhEditUser"> Edit Permissions/User</a>-->
+		<br><br><a class="btn btn-primary btn-rounded" href="/admin/createnewuser"> Create New User </a>
+		<!--<br><br><a class="btn btn-primary btn-rounded" href="/admin/edituser"> Edit Permissions/User</a>-->
 	{{/if}}
-	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhChangePassword"> Change Password</a>
+	<br><br><a class="btn btn-primary btn-rounded" href="/admin/changepassword"> Change Password</a>
 
 	{{#if isAdmin}}
 	<!-- WILL ADD POST BETA 
-	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhBackupData"> Backup Data</a>
-	<br><br><a class="btn btn-primary btn-rounded" href="/ccdhhAdminApproval"> Admin Approval System</a>
+	<br><br><a class="btn btn-primary btn-rounded" href="/admin/backupdata"> Backup Data</a>
+	<br><br><a class="btn btn-primary btn-rounded" href="/admin/adminapproval"> Admin Approval System</a>
 	-->
 	{{/if}}
 

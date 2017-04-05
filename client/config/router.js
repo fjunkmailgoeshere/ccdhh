@@ -19,38 +19,38 @@ FlowRouter.route('/main', {
 // Login Stuff
 //
 
-FlowRouter.route('/ccdhhforgotpassword', {
+FlowRouter.route('/forgotpassword', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhforgotpassword"})
 	}
 });
 
-FlowRouter.route('/ccdhhlockscreen', {
+FlowRouter.route('/lockscreen', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhlockscreen"})
 	}
 });
 
-FlowRouter.route('/ccdhhregister', {
+FlowRouter.route('/register', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhregister"})
 	}
 });
 
-FlowRouter.route('/ccdhhLogin', {
+FlowRouter.route('/login', {
     action: function() {
         BlazeLayout.render("blankLayout", {content: "ccdhhLogin"});
     },
     name: "ccdhhLogin"
 });
 
-FlowRouter.route('/ccdhh404error', {
+FlowRouter.route('/404error', {
     action: function() {
         BlazeLayout.render("blankLayout", {content: "ccdhh404error"});
     }
 });
 
-FlowRouter.route('/ccdhh500error', {
+FlowRouter.route('/500error', {
     action: function() {
         BlazeLayout.render("blankLayout", {content: "ccdhh500error"});
     }
@@ -60,7 +60,7 @@ FlowRouter.route('/ccdhh500error', {
 //Consults
 //
 
-FlowRouter.route('/ccdhhConsults', {
+FlowRouter.route('/consults', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhConsults"});
     }
@@ -71,36 +71,42 @@ FlowRouter.route('/ccdhhConsults', {
 // Admin Pages
 // 
 
-FlowRouter.route('/ccdhhAdmin', {
+FlowRouter.route('/admin', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhAdmin"});
     }
 });
 
-FlowRouter.route('/ccdhhCreateNewUser', {
+FlowRouter.route('/admin/createnewuser', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhCreateNewUser"});
     },
     name: "ccdhhCreateNewUser"
 });
 
-FlowRouter.route('/ccdhhEditUser', {
+FlowRouter.route('/admin/edituser', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhEditUser"});
     }
 });
-FlowRouter.route('/ccdhhChangePassword', {
+FlowRouter.route('/admin/changepassword', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhChangePassword"});
     }
 });
-FlowRouter.route('/ccdhhBackupData', {
+FlowRouter.route('/admin/backupdata', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhBackupData"});
     }
 });
 
-FlowRouter.route('/ccdhhAdminApproval', {
+FlowRouter.route('/admin/adminapproval', {
+    action: function() {
+        BlazeLayout.render("mainLayout", {content: "ccdhhAdminApproval"});
+    }
+});
+
+/*FlowRouter.route('/ccdhhAdminApproval', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhAdminApproval"});
     }
@@ -112,41 +118,37 @@ FlowRouter.route('/ccdhhAdminApproval', {
     }
 });
 
-FlowRouter.route('/ccdhhAdminApproval', {
-    action: function() {
-        BlazeLayout.render("mainLayout", {content: "ccdhhAdminApproval"});
-    }
-});
+*/
 
 
 //
 // Trainings
 //
 
-FlowRouter.route('/ccdhhTrainings', {
+FlowRouter.route('/trainings', {
     action: function() {
         BlazeLayout.render("mainLayout", {content: "ccdhhTrainings"});
     }
 });
 
-FlowRouter.route('/ccdhhAddNewSession', {
+FlowRouter.route('/trainings/addnewsession', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhAddNewSession"})
 	}
 });
 
-FlowRouter.route('/ccdhhUploadSurveyResults', {
+FlowRouter.route('/trainings/uploadsurveyresults', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhUploadSurveyResults"})
 	}
 });
 
-FlowRouter.route('/ccdhhSurveyMode', {
+FlowRouter.route('/trainings/surveymode', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhSurveyMode"})
 	}
 });
-
+/*
 
 //
 // Reports Query
@@ -1042,4 +1044,6 @@ FlowRouter.route('/notFound', {
         BlazeLayout.render("blankLayout", {content: "notFound"});
     }
 });
+
+*/
 

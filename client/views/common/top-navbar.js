@@ -11,7 +11,7 @@ Template.topNavbar.events({
 	'click .logout': function(event) {
 		event.preventDefault();
 		Meteor.logout();
-		FlowRouter.go('/ccdhhLogin');
+		FlowRouter.go('/login');
 		
 	},
 

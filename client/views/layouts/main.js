@@ -5,7 +5,7 @@ Template.mainLayout.rendered = function(){
 	//if (user) { 
 	//} else {
 	//	if (routeName != 'ccdhhCreateNewUser') {
-	//		FlowRouter.go('/ccdhhLogin');
+	//		FlowRouter.go('/login');
 	//	}
 
 	//}
