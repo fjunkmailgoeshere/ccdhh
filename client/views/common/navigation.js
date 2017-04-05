@@ -13,3 +13,14 @@ Template.navigation.events({
     }
 
 });
+
+Template.navigation.helpers({
+	//'firstName': function() {
+	//	return Meteor.user();
+	//}
+
+	//'userPhoto': function() {
+	//	//code here to get photo URL, but if none exists, use default
+	//}
+});
+

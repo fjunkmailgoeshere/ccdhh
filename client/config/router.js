@@ -19,12 +19,6 @@ FlowRouter.route('/main', {
 // Login Stuff
 //
 
-FlowRouter.route('/ccdhhdeleteme', {
-	action: function() {
-		BlazeLayout.render("blankLayout", {content: "ccdhhDeleteMe"})
-	}
-});
-
 FlowRouter.route('/ccdhhforgotpassword', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhforgotpassword"})

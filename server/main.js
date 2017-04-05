@@ -27,7 +27,7 @@ Meteor.methods({
 	},
 
 	'createUserFromAdmin': function(packedData) {
-		console.log(packedData);
+		//console.log(packedData);
 		//unpack
 		var email = packedData["email"]
 		var password = packedData["password"]
@@ -46,4 +46,24 @@ Meteor.methods({
 
 Meteor.startup(() => {
   // code to run on server at startup
+
+	if (Meteor.users.find().count() == 0) {
+		console.log("Zero accounts");
+
+		profile = {};
+                profile["firstName"] = "Root";
+                profile["lastName"] = "Root";
+                profile["role"] = "administrator";
+                profile["active"] = true;
+                profile["photo"] = "img/users/defaultuser.png";
+		profile["title"] = "";
+
+		//Immediately change password upon deploy!!!!!!
+		Accounts.createUser({
+			email: "root@root.com",
+			password: "rootdeploy",
+			profile: profile			
+		});
+	}
+
 });
