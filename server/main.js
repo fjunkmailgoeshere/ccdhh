@@ -39,14 +39,25 @@ Meteor.methods({
 			password: password,
 			profile: profile
 		});
+	},
+	
+	'allUsers': function() {
+		console.log("CALLED ALLUSERS");
+		return Meteor.users.find({});
 	}
 });
 
+//Meteor.publish("allUsers", function(){
+//	return Meteor.users.find({});
+//});
 
 
 Meteor.startup(() => {
-  // code to run on server at startup
-
+  // code to run on server at startup	
+	
+	console.log("TOTAL USERS");
+	console.log(Meteor.users.find().count());
+	
 	if (Meteor.users.find().count() == 0) {
 		console.log("Zero accounts");
 

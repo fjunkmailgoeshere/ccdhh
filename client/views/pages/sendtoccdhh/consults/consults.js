@@ -2,6 +2,7 @@
 /* code here */
 
 
+
 Template.ccdhhConsults.events({
 	'submit form': function(event) {
 		event.preventDefault();
@@ -109,3 +110,17 @@ Template.ccdhhConsults.rendered = function() {
     });
 }
 
+
+//Where should this be placed? somewhere else in the system?
+Meteor.subscribe('allUsers');
+
+Template.ccdhhConsults.helpers({
+	'theUsers': function() {
+		alert(Meteor.users.find().count());
+		alert(allUsers);
+		var user = true;
+
+		return user;
+	}
+
+});
