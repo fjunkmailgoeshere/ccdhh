@@ -6,7 +6,6 @@
 	<div class="ibox-content">
 	<form class="form-horizontal">
 	<!-- ctrl-u to rstore deleted each -->
-		{{theUsers}}
 		<!-- Get Date of Consultation -->
 		<div class="form-group" id="data_1">
 			<label class="col-sm-2 control-label">Date of Consultation</label>
@@ -38,10 +37,10 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Age</label>
 			<div class="col-sm-10">
-                <div class="i-checks"><label> <input type="radio" name="age" value="Age_18-24"> 18-24 years old </label></div>
-                <div class="i-checks"><label> <input type="radio" name="age" value="Age_25-44"> <i></i> 25-44 years old </label></div>
-                <div class="i-checks"><label> <input type="radio" name="age" value="Age_45-64"> <i></i> 45-64 years old </label></div>				
-                <div class="i-checks"><label> <input type="radio" name="age" value="Age_65_years_or_older"> <i></i> 65 years or older </label></div>
+                <div class="i-checks"><label> <input type="radio" name="age" value="18-24"> 18-24 years old </label></div>
+                <div class="i-checks"><label> <input type="radio" name="age" value="25-44"> <i></i> 25-44 years old </label></div>
+                <div class="i-checks"><label> <input type="radio" name="age" value="45-64"> <i></i> 45-64 years old </label></div>				
+                <div class="i-checks"><label> <input type="radio" name="age" value="65-up"> <i></i> 65 years or older </label></div>
 			</div>
 		</div>
 		
@@ -61,7 +60,7 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Ethnicity</label>
 			<div class="col-sm-10">
-                <div class="i-checks"><label> <input type="radio" name="ethnicity" value="spanish,_hispanic,_or,latino"> Spanish, Hispanic, or Latino </label></div>
+                <div class="i-checks"><label> <input type="radio" name="ethnicity" value="hispanic"> Spanish, Hispanic, or Latino </label></div>
                 <div class="i-checks"><label> <input type="radio" name="ethnicity" value="white"> White </label></div>
                 <div class="i-checks"><label> <input type="radio" name="ethnicity" value="black_or_african-american"> <i></i> Black or African-American </label></div>
                 <div class="i-checks"><label> <input type="radio" name="ethnicity" value="american_indian_or_alaskan_native"> <i></i> American Indian or Alaskan Native </label></div>				
@@ -149,11 +148,11 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label">Entity</label>
 			<div class="col-sm-10">
-                <div class="i-checks"><label> <input type="radio" name="entity" value="i_-_individual"> I - Individual </label></div>
-                <div class="i-checks"><label> <input type="radio" name="entity" value="ge_-_government"> <i></i> GE - Government </label></div>
-                <div class="i-checks"><label> <input type="radio" name="entity" value="pe_-_public"> <i></i> PE - Public </label></div>				
-                <div class="i-checks"><label> <input type="radio" name="entity" value="co_-_community"> <i></i> CO - Community </label></div>
-                <div class="i-checks"><label> <input type="radio" name="entity" value="pre_-_private"> <i></i> PRE - Private </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="i"> I - Individual </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="ge"> <i></i> GE - Government </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="pe"> <i></i> PE - Public </label></div>				
+                <div class="i-checks"><label> <input type="radio" name="entity" value="co"> <i></i> CO - Community </label></div>
+                <div class="i-checks"><label> <input type="radio" name="entity" value="pre"> <i></i> PRE - Private </label></div>
 			</div>
 		</div>
 		
@@ -162,7 +161,7 @@
 			<label class="col-sm-2 control-label">Method of Contact</label>
 			<div class="col-sm-10">
                 <div class="i-checks"><label> <input type="radio" name="method" value="email"> Email </label></div>
-                <div class="i-checks"><label> <input type="radio" name="method" value="vp/phone"> <i></i> VP/Phone </label></div>
+                <div class="i-checks"><label> <input type="radio" name="method" value="vp-phone"> <i></i> VP/Phone </label></div>
                 <div class="i-checks"><label> <input type="radio" name="method" value="in-person"> <i></i> In-Person </label></div>				
                 <div class="i-checks"><label> <input type="radio" name="method" value="other"> <i></i> Other </label></div>
 			</div>
@@ -195,15 +194,7 @@
 			<label class="col-sm-2 control-label">Person taking call</label>
 			<div class="col-sm-10">
 				<select class="form-control m-b" name="persontakingcall">
-                	<option value="Timothy">Timothy</option>
-                	<option value="Cliff">Cliff</option>
-                	<option value="Cheri">Cheri</option>
-                	<option value="JoAnne">JoAnne</option>
-                	<option value="Mandy">Mandy</option>
-                	<option value="Ryan">Ryan</option>
-                	<option value="Jason">Jason</option>
-                	<option value="newOutreach1">New Outreach 1</option>
-                	<option value="newOutreach2">New Outreach2</option>
+			<option value="{{theUsers._id}}">{{theUsers.profile.firstName}} {{theUsers.profile.lastName}}</option>
 				</select>
 			</div>
 		</div>
@@ -228,7 +219,7 @@
 		<div class="form-group">
 			<label class="col-sm-2 control-label"></label>
 			<div class="col-sm-10">
-                <div class="i-checks"><label> <input type="checkbox" name="policy" value="policy">Policies and Procedures Advisement Provided</label></div>
+                <div class="i-checks"><label> <input type="checkbox" name="policy" value="policy"> Policies and Procedures Advisement Provided</label></div>
 			</div>
 		</div>
 		

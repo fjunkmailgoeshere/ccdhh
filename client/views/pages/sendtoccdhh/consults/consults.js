@@ -62,6 +62,7 @@ Template.ccdhhConsults.events({
 
 		//Put everything into a dictionary that will become the JSON object inserted into the DB
 		var data = {
+			user: Meteor.userId(),
 			date: theDate,
 			name: event.target.name.value,
 			gender: event.target.gender.value,
@@ -112,14 +113,15 @@ Template.ccdhhConsults.rendered = function() {
 
 
 //Where should this be placed? somewhere else in the system?
-Meteor.subscribe('allUsers');
+//Meteor.subscribe('allUsers');
 
 Template.ccdhhConsults.helpers({
 	'theUsers': function() {
-		alert(Meteor.users.find().count());
-		alert(allUsers);
-		var user = true;
-
+		//alert(Meteor.users.find().count());
+		//alert(allUsers);
+		var user = Meteor.user();
+		//console.log(user);
+		//console.log(Meteor.users);
 		return user;
 	}
 
