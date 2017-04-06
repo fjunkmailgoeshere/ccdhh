@@ -154,6 +154,12 @@ FlowRouter.route('/trainings/surveymode', {
 		BlazeLayout.render("mainLayout", {content: "ccdhhSurveyMode"})
 	}
 });
+
+FlowRouter.route('/library', {
+	action: function() {
+		BlazeLayout.render("mainLayout", {content: "library"})
+	}
+});
 /*
 
 //
