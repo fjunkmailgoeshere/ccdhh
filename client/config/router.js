@@ -160,6 +160,18 @@ FlowRouter.route('/library', {
 		BlazeLayout.render("mainLayout", {content: "library"})
 	}
 });
+
+FlowRouter.route('/ccdhhTrainingMaterials', {
+	action: function() {
+		BlazeLayout.render("mainLayout", {content: "ccdhhTrainingMaterials"})
+	}
+});
+
+FlowRouter.route('/ccdhhCreateTrainingModule', {
+	action: function() {
+		BlazeLayout.render("mainLayout", {content: "ccdhhCreateTrainingModule"})
+	}
+});
 /*
 
 //
@@ -192,12 +204,6 @@ FlowRouter.route('/ccdhhQueryResults', {
 FlowRouter.route('/ccdhhLibrary', {
 	action: function() {
 		BlazeLayout.render("mainLayout", {content: "ccdhhLibrary"})
-	}
-});
-
-FlowRouter.route('/ccdhhTrainingMaterials', {
-	action: function() {
-		BlazeLayout.render("mainLayout", {content: "ccdhhTrainingMaterials"})
 	}
 });
 

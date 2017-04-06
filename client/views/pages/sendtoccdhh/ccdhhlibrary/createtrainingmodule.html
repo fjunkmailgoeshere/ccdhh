@@ -1,8 +1,48 @@
 <template name="ccdhhCreateTrainingModule">
 
     <!-- Page heading -->
-    {{> pageHeading title='CreateTrainingModule' category='Other pages' }}
+    {{> pageHeading title='Create Training Module' category='Other pages' }}
 
-<h3>Hello Uranus! <small> teehee. I'm still 5 </small></h3>
+<BR>
+<div class="ibox-content">
+	<form class="form-horizontal">
 
+<!-- Enter Date Module Created-->		
+		<div class="form-group" id="data_1">
+			<label class="col-sm-2 control-label">Date Module Created</label>
+				<div class="col-sm-10 input-group date">
+					<span class="input-group-addon">&nbsp;&nbsp;<i class="fa fa-calendar"></i></span><input type="text" class="form-control" data-mask="99/99/9999" name="dateoftraining" value="03/31/2017">
+				</div>
+		</div>
+
+<!-- Enter Title of Module-->
+		<div class="form-group">
+				<label class="col-sm-2 control-label">Title of Module</label>
+			<div class="col-sm-10">
+				<input type="text" placeholder="enter text here" name="titleoftraining">
+			</div>
+		</div>
+	
+<!-- Enter Created by-->
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Created by</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="Created by" name="numberofattendees">
+			</div>	
+		</div>
+
+<!-- Add file upload-->	
+		<div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <div class="file-manager">
+                    <div class="hr-line-dashed"></div>
+                    	<button class="btn btn-primary">Upload Files</button>
+                            <div class="hr-line-dashed"></div>
+                    		<div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+            
+	</form>
+</div>	
 </template>
